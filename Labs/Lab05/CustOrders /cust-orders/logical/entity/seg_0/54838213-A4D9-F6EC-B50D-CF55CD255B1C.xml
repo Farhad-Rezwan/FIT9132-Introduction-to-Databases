@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54838213-A4D9-F6EC-B50D-CF55CD255B1C" name="CUSTOMER">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:47:06 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="custno" id="17DCDDB7-A175-9EB6-8C14-5072B1B58E92">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:49:07 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custname" id="CAA5572F-7ABA-F6AB-249C-DFC4DDEBB241">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:50:29 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custaddress" id="F29CA23E-3F87-6B0B-B782-CFDD46D9D17B">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:51:01 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custphone" id="DC33D1F2-6B02-3145-A015-5E7E26568FBE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:51:16 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F717432C-49D7-7936-DA0C-B2FB4D32B604" name="CUSTOMER PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-05 16:50:21 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="9F6AA905-0AE0-ED05-1EF7-B734D54A1D21" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>17DCDDB7-A175-9EB6-8C14-5072B1B58E92</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
