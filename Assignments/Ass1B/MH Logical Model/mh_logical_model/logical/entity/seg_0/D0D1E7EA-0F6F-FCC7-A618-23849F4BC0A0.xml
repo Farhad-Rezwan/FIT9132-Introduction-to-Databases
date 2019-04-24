@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0" name="PATIENT_ADMISSION">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:41:42 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="admission_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:42:31 UTC</createdTime>
+<comment>admission_datetime: admission date and time of a particular patient</comment>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="discharge_datetime" id="4D2D32C0-DADD-2C30-4AF1-B96EC4834C38">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:43:35 UTC</createdTime>
+<comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patient_id" id="7EA195F0-41F8-8BA0-6331-2464DA8E2BB6">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:57:06 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>FEFF45A8-6DD2-CB73-3EB9-50E7BE57689A</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doctor_id" id="A81C4DBD-E197-6D6D-DED3-E762AF14B42B">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:59:03 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>36361BD9-18CE-591B-617C-7141DE9DC9FB</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="17FB2FD9-AEFF-C7CD-E284-DFC95116A36F" name="PATIENT_ADMISSION PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 18:49:28 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8A60C1D-F172-BC01-1833-B7927ECE1310</attributeRef>
+<attributeRef>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

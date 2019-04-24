@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="nurse_wardassignment" directorySegmentName="seg_0" id="DD316B47-3AFF-D8C2-50FA-8D3F990E75E6">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:45:26 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<sourcePk>C3638664-51F8-EB25-E476-0986FDE247E9</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>allocates_for</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>499930D8-5880-ED47-0FFE-D5BEB2B391D4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3448DECA-D272-6225-024F-A2AE9DDF7AFA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

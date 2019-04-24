@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3448DECA-D272-6225-024F-A2AE9DDF7AFA" name="WARDASSGNMENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:44:54 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nurse_id" id="6171CD56-F8F5-B873-F9BF-0238B19AAAF7">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:45:26 UTC</createdTime>
+<commentInRDBMS>nurse_id: unique nurse id</commentInRDBMS>
+<generatorID>DD316B47-3AFF-D8C2-50FA-8D3F990E75E6</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>E4982A37-1AE2-738C-4A16-AEA2D376614A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ward_code" id="1F568C66-9489-6CEC-EA5A-B1919C75D258">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:46:34 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>8581DFF5-38C3-013D-70F2-5ED1C4041F6C</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_assigned" id="AFD34AAD-277A-5525-AB05-1B5B24ACE51E">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:48:01 UTC</createdTime>
+<commentInRDBMS>date_assigned:  initial date a nurse is assigned to work in a ward</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_completed" id="A573642D-2896-4FC8-35F7-97D9AA375138">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:49:32 UTC</createdTime>
+<commentInRDBMS>date_completed: when a nurse finishes an allocaiton with a particular ward</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5BD7A251-3E15-CC07-CDAA-0AC0D13D2A58" name="WARDASSGNMENT PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:45:26 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6171CD56-F8F5-B873-F9BF-0238B19AAAF7</attributeRef>
+<attributeRef>AFD34AAD-277A-5525-AB05-1B5B24ACE51E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

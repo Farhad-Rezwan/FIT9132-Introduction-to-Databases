@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ward_wardassignment" directorySegmentName="seg_0" id="8581DFF5-38C3-013D-70F2-5ED1C4041F6C">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:46:34 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<sourcePk>10CB909E-1146-94D1-3EAE-9DF7AB7F6631</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2D10046B-9C3A-D609-0A74-DEF3A115787D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3448DECA-D272-6225-024F-A2AE9DDF7AFA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

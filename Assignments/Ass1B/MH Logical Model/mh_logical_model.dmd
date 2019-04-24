@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mh_logical_model" id="55FD8868-27BF-80C6-E95D-B4A353696573" version="3.5">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 17:55:04 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>55FD8868-27BF-80C6-E95D-B4A353696573</designId>
+</OSDM_Design>

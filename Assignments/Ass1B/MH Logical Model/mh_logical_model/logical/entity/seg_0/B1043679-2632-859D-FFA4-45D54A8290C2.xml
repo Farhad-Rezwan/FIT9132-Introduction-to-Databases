@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1043679-2632-859D-FFA4-45D54A8290C2" name="DOCTOR_SPECIALISATION">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:15:55 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doctor_id" id="CC961CA0-8984-5661-A804-DC39690E520F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:21:45 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>08E4D98C-BA7C-778C-79D8-9288D6BDEADB</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="specialisation_id" id="8450D54D-FFEA-A9CB-48CB-D1EB4E5F676A">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:22:58 UTC</createdTime>
+<commentInRDBMS>specialisation_id: doctor specialisation id</commentInRDBMS>
+<generatorID>D8519AD7-F661-FEA7-53FA-D2356780B8B9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<referedAttribute>809F5F80-C855-8CF3-1F51-74DEA878BDDD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F38F4ACC-1AE6-1A26-31F8-B2DB080FCE31" name="DOCTOR_SPECIALISATION PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 19:21:45 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CC961CA0-8984-5661-A804-DC39690E520F</attributeRef>
+<attributeRef>8450D54D-FFEA-A9CB-48CB-D1EB4E5F676A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
