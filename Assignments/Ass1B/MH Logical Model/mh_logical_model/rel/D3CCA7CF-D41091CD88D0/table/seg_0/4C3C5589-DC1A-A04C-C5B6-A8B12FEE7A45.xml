@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C3C5589-DC1A-A04C-C5B6-A8B12FEE7A45" name="PATIENT_PROCEDURE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>1B37467E-7324-891F-E987-26961995C226</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="carried_out_on" id="82728010-CF3F-28EC-4C3F-498E93975254">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
+<generatorID>BC91F747-807F-E32E-91E8-9AF1F7B11518</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procedure_code" id="749719F2-A9D4-3F30-D459-22B58B67A23A">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>8C7B6DA7-1B11-61D2-8D9C-43040322CEC2</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procedure_charge" id="97FCE46D-7317-7B4D-1F00-D323EC370411">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>procedure_charge: procedure charge to patient</commentInRDBMS>
+<generatorID>C8D1EB47-14FA-A211-DB6B-3EA7CEE181AC</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="totalextras_charges" id="A97D74C6-3694-8125-A41E-0928E5866408">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>totalextras_charges: total extras charges to patient</commentInRDBMS>
+<generatorID>AEC18B4B-2AAC-6704-FF48-6F5C8A4781DE</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doctor_id" id="8CC56F90-590C-9040-4DAE-204EF9E9EE6F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>2D86C0BB-EACF-2BE4-CB8D-98E3B23FFE7D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="362C1DD2-31F3-B581-5D8C-4357AAE84388" referredColumn="26185D51-B89A-41BB-BF53-3F31F78F2444"/>
+</associations>
+</Column>
+<Column name="doctor_id1" id="73354641-CEFF-9D7C-68C2-A72A5E6F9B6E">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>C32F9EF8-5418-0962-F6EB-8F8D6E464BC8</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2272360D-422E-A64B-877D-0E620A1E2894" referredColumn="26185D51-B89A-41BB-BF53-3F31F78F2444"/>
+</associations>
+</Column>
+<Column name="admission_datetime" id="84146AC3-6E6F-AA0D-15D9-920028BB193D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<comment>admission_datetime: admission date and time of a particular patient</comment>
+<generatorID>97B2E441-0091-D5B6-DA12-CF0BAA07F9C3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E80C8248-A619-ED51-B44A-A5683BE27E1D" referredColumn="65765EF6-9782-8E26-0D55-B0439F6C360E"/>
+</associations>
+</Column>
+<Column name="patient_id" id="81B8F8EF-071E-40BB-5EC1-D33B8E8242A1">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>6476592B-1B18-0346-D875-6B5434BD56BA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E80C8248-A619-ED51-B44A-A5683BE27E1D" referredColumn="C3CB856A-CD99-AF34-6B82-1E2AA495CD08"/>
+</associations>
+</Column>
+<Column name="procedure_code1" id="13FBB90A-C46D-9958-BA00-61C1F548B8AB">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>C6F765C1-53BE-BE44-E6F2-446FA5F3B212</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D70330CD-D649-DD17-01E5-33C395E2DE3D" referredColumn="2262C626-B8E1-25FC-A63F-285CCE4A2367"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E12C5A0-263D-205C-39D6-7ED742A800F8" name="PATIENT_PROCEDURE_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>49692CA3-6C40-DE3C-75B3-A94E4BE03CDE</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82728010-CF3F-28EC-4C3F-498E93975254"/>
+<colUsage columnID="84146AC3-6E6F-AA0D-15D9-920028BB193D"/>
+<colUsage columnID="81B8F8EF-071E-40BB-5EC1-D33B8E8242A1"/>
+<colUsage columnID="13FBB90A-C46D-9958-BA00-61C1F548B8AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9CC8296-A009-49F9-EC85-F1B88B66A3B9" name="doctor_patientProcedure">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>53AD2DCC-84EF-826D-C1C6-4C83814DEDE5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CC56F90-590C-9040-4DAE-204EF9E9EE6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="051D18C4-BEF1-8DC9-C0DC-9677E9F3A917" name="doctor_patientProcedure2">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>172FD49D-8B6A-AA6A-674A-4B81F25981CD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73354641-CEFF-9D7C-68C2-A72A5E6F9B6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DEF2A7E-02DD-A7FD-F85E-83185CCC73C4" name="patientAdmission_patientProcedure">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>DF8FD826-CC24-3909-5587-A6E48998990C</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84146AC3-6E6F-AA0D-15D9-920028BB193D"/>
+<colUsage columnID="81B8F8EF-071E-40BB-5EC1-D33B8E8242A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C523FDF6-868B-4116-4263-90CBD870A73B" name="procedure_patientProcedure">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>E2880E0F-77A7-9322-6C10-9CF7975E4BC9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13FBB90A-C46D-9958-BA00-61C1F548B8AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E665685-DA47-226B-F171-F6E10E581C5B" name="BEDASSIGNMENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:35:07 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bed_no" id="3110B306-499A-DD35-B807-8D4A31BFE867">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:36:27 UTC</createdTime>
+<commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
+<generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>38032291-C86A-22E2-72DA-482EC2217417</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ward_code" id="EC27E6D3-E5A9-60CB-525B-94DA0370BDD2">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:36:27 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>7E750D8D-9ABB-F021-FDC7-4EEA129031F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="admission_datetime" id="45E08C87-9DD4-3E40-9C65-6D6A8356A844">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:37:53 UTC</createdTime>
+<comment>admission_datetime: admission date and time of a particular patient</comment>
+<generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>F8A60C1D-F172-BC01-1833-B7927ECE1310</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patient_id" id="1198AA46-32CD-5007-74E8-96330CD553C3">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:37:53 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="305D8F78-D954-D48C-5258-60A7649254A7" name="BEDASSIGNMENT PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:36:27 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3110B306-499A-DD35-B807-8D4A31BFE867</attributeRef>
+<attributeRef>EC27E6D3-E5A9-60CB-525B-94DA0370BDD2</attributeRef>
+<attributeRef>45E08C87-9DD4-3E40-9C65-6D6A8356A844</attributeRef>
+<attributeRef>1198AA46-32CD-5007-74E8-96330CD553C3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

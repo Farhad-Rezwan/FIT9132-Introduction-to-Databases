@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="93F3ECAA-F467-F513-F6B8-C627362DA1D5" containerWithKeyObject="2E8BBD0F-CF98-4623-D4AC-2D446BB31FD3" localFKIndex="F9FAAC57-A482-23E1-174A-77C6BEF6E423" name="specialisation_doctor_Specialisation">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>D8519AD7-F661-FEA7-53FA-D2356780B8B9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referredTableLongName>SPECIALISATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04F5F439-74BB-1A65-1A7C-4583A1C40ACE</referredTableID>
+<keyObject>9EA1E622-FE87-03A0-E770-0A6815871E65</keyObject>
+<referredKeyID>9EA1E622-FE87-03A0-E770-0A6815871E65</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>specialisation_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F2A1C804-5ABA-D766-8A5D-574053D354BA" name="PROCEDURE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:27:49 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="procedure_code" id="30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:28:45 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure_name" id="430CC88D-39D8-6036-4B74-6E736E21AB3A">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:29:29 UTC</createdTime>
+<commentInRDBMS>procedure_name: name of the procedure</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure_description" id="ABCB8616-8FCF-FB31-16B0-5C40CE2B8114">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:30:09 UTC</createdTime>
+<commentInRDBMS>procedure_description: procedure description of each procedure</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="proc_time_req" id="1044BEBD-65FE-77EF-D989-4E9CA045D2A6">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:31:41 UTC</createdTime>
+<commentInRDBMS>proc_time_req: time required for each procedure</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="current_cost" id="A3D7286F-6427-6B72-68F9-327ADA9E1071">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:32:57 UTC</createdTime>
+<commentInRDBMS>current_cost: current cost of each procedure</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="113CA80B-287E-9013-A339-28B433534E3F" name="PROCEDURE PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:29:06 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

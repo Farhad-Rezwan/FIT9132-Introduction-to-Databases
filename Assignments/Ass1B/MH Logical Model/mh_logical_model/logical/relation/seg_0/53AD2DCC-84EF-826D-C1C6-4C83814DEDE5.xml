@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_patient_admission" directorySegmentName="seg_0" id="36361BD9-18CE-591B-617C-7141DE9DC9FB">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_patientProcedure" directorySegmentName="seg_0" id="53AD2DCC-84EF-826D-C1C6-4C83814DEDE5">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:59:03 UTC</createdTime>
+<createdTime>2019-04-24 20:58:01 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <sourcePk>5CE899FA-7D04-6F64-2120-E33BDDBE281F</sourcePk>
-<identifying>true</identifying>
-<nameOnSource>supervises</nameOnSource>
+<identifying>false</identifying>
+<nameOnSource>prescribes</nameOnSource>
 <optionalSource>true</optionalSource>
-<optionalTarget>false</optionalTarget>
+<optionalTarget>true</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>80907D7C-6AC8-490C-3947-29DFEEA740F4</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0</targetEntity>
+<targetEntity>1B37467E-7324-891F-E987-26961995C226</targetEntity>
 <transferable>true</transferable>
 </Relation>

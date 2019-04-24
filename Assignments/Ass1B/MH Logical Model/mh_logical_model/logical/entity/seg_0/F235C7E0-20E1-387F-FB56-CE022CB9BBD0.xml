@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F235C7E0-20E1-387F-FB56-CE022CB9BBD0" name="EXTRA_ITEM">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:08:38 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="item_code" id="4BEE00D0-F7AE-F857-11FC-C906BF530AE9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:09:40 UTC</createdTime>
+<comment>item_code: item code for each extra item</comment>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_description" id="5F29AA7B-5115-EBE3-528C-67BFF3C2C17E">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:11:12 UTC</createdTime>
+<comment>item_description: description of each extra item</comment>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_price" id="192BD878-9F1A-FAD4-9346-E0CF592E09D0">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:12:02 UTC</createdTime>
+<commentInRDBMS>item_price: price of each extra item</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_cstock" id="8D3F68FA-4341-31B2-7298-481A6DA776EF">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:13:52 UTC</createdTime>
+<commentInRDBMS>item_cstock: current stock of each item</commentInRDBMS>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_code" id="B30C3F8F-B9C7-DA2A-4CFB-2BFB3C445383">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:26:14 UTC</createdTime>
+<commentInRDBMS>centre_code: cost centre code</commentInRDBMS>
+<generatorID>304B67AB-F16C-E2F6-F56D-B22292D7F09A</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>FF163BE9-EC9C-40AF-C956-0CA19508C9D3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A1C3EE90-62CC-79A5-9A6D-989B11F9649A" name="EXTRA_ITEM PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:10:20 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</attributeRef>
+<attributeRef>4D5FFB6D-AD04-B10C-D8AB-E80429A8C4C2</attributeRef>
+<attributeRef>842DD7F6-C8C6-3723-F8B9-9778C675FDF6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

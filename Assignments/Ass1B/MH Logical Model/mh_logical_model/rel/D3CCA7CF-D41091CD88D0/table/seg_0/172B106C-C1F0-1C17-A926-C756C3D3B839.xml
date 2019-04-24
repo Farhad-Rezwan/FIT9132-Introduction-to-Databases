@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="172B106C-C1F0-1C17-A926-C756C3D3B839" name="BEDASSIGNMENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>4E665685-DA47-226B-F171-F6E10E581C5B</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bed_no" id="DA2A4B50-1357-06EA-E51E-6B09972A86BC">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
+<generatorID>3110B306-499A-DD35-B807-8D4A31BFE867</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1799547A-301F-B944-F8A7-01A991DBB52B" referredColumn="92B9C2E6-A6B4-6050-3D1A-1537CE2983A2"/>
+</associations>
+</Column>
+<Column name="ward_code" id="0ADD0945-923C-6397-B5D0-84A2612F1021">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>EC27E6D3-E5A9-60CB-525B-94DA0370BDD2</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1799547A-301F-B944-F8A7-01A991DBB52B" referredColumn="E947997E-9168-5DC9-14E7-0B0CC0AC0F65"/>
+</associations>
+</Column>
+<Column name="admission_datetime" id="FAB618AA-D339-450C-39E5-D8623F826AB7">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<comment>admission_datetime: admission date and time of a particular patient</comment>
+<generatorID>45E08C87-9DD4-3E40-9C65-6D6A8356A844</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="316E2625-F999-1D9E-722B-BFF8E421D044" referredColumn="65765EF6-9782-8E26-0D55-B0439F6C360E"/>
+</associations>
+</Column>
+<Column name="patient_id" id="5ABDA056-5DFD-6330-7056-6B88087B7784">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>1198AA46-32CD-5007-74E8-96330CD553C3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="316E2625-F999-1D9E-722B-BFF8E421D044" referredColumn="C3CB856A-CD99-AF34-6B82-1E2AA495CD08"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4F72605-A97B-491D-0C67-840D1F146CAD" name="BEDASSIGNMENT_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>305D8F78-D954-D48C-5258-60A7649254A7</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA2A4B50-1357-06EA-E51E-6B09972A86BC"/>
+<colUsage columnID="0ADD0945-923C-6397-B5D0-84A2612F1021"/>
+<colUsage columnID="FAB618AA-D339-450C-39E5-D8623F826AB7"/>
+<colUsage columnID="5ABDA056-5DFD-6330-7056-6B88087B7784"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="541DF94B-4C37-555E-4D0E-72DE6DB1C31D" name="bed_bedassignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA2A4B50-1357-06EA-E51E-6B09972A86BC"/>
+<colUsage columnID="0ADD0945-923C-6397-B5D0-84A2612F1021"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34205F51-23C3-B010-AF2F-0F5F6C9A494E" name="patient_admission_bedassignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAB618AA-D339-450C-39E5-D8623F826AB7"/>
+<colUsage columnID="5ABDA056-5DFD-6330-7056-6B88087B7784"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

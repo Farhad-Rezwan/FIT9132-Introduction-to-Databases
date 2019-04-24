@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="469943B4-50E7-D8E5-A882-2597838AE982" name="NURSE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>499930D8-5880-ED47-0FFE-D5BEB2B391D4</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nurse_id" id="C7CD2235-E4B6-569E-56C9-B05163C21A71">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>nurse_id: unique nurse id</commentInRDBMS>
+<generatorID>E4982A37-1AE2-738C-4A16-AEA2D376614A</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurse_fname" id="965A1558-0CD6-E647-3CD4-67F36C23A11C">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>nurse_fname: nurse first name</commentInRDBMS>
+<generatorID>0C9704CF-5DD8-D641-17F3-C6B4C52D0249</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurse_lname" id="D1ECE6C5-55C0-3D06-11C2-75F467008473">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>nurse_lname: nurse last name</commentInRDBMS>
+<generatorID>ECBE461C-DA6A-7280-CE02-B801DB3D52BD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurse_phone" id="80B75621-5439-DA86-007E-8B4B20020844">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>nurse_phone: nurse contact phone number</commentInRDBMS>
+<generatorID>C35CCE7E-E13C-7A6D-C3D8-D159C1BBA093</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cert_for_children" id="3634BE65-C1CB-9C42-47AA-0533E0B0CF70">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<commentInRDBMS>cert_for_children: nurse certified for work with children</commentInRDBMS>
+<generatorID>E74E0E94-F2DE-FC62-703E-37914798FCBE</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="NO" description=""/>
+<valueDef value="YES" description=""/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C7241559-FCA8-A769-EA61-36B89AD259C3" name="NURSE_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 21:37:58 UTC</createdTime>
+<generatorID>C3638664-51F8-EB25-E476-0986FDE247E9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7CD2235-E4B6-569E-56C9-B05163C21A71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -3,9 +3,6 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:54:18 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -20,9 +17,6 @@
 <createdTime>2019-04-24 19:55:04 UTC</createdTime>
 <commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -34,9 +28,6 @@
 <createdTime>2019-04-24 19:59:10 UTC</createdTime>
 <commentInRDBMS>bed_phone_no: bedside telephone number</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -49,10 +40,6 @@
 <createdTime>2019-04-24 20:00:27 UTC</createdTime>
 <commentInRDBMS>bed_type: beds are classified as either fixed or adjustable</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <listOfValues>
@@ -61,18 +48,29 @@
 </listOfValues>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ward_code" id="7E750D8D-9ABB-F021-FDC7-4EEA129031F3">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 20:34:11 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>2D0A4449-8F2E-CBA1-B208-743699F48BC1</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0FD568B4-1906-E733-FB35-9D3827E88FDA" name="BED PK">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:57:49 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>38032291-C86A-22E2-72DA-482EC2217417</attributeRef>
+<attributeRef>7E750D8D-9ABB-F021-FDC7-4EEA129031F3</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
