@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C47C9BBE-BF3A-C472-D619-18737546F2B8" name="PRODUCT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<generatorID>744925DD-D63F-61D1-14AB-5081572FE187</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prodno" id="A8017D35-7C90-5CF7-7CF8-22B2AA4E4B93">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>prodno: product number</commentInRDBMS>
+<generatorID>26663B4B-FB90-922B-4986-DE91BB31520D</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proddesc" id="E16F94CF-864B-0C4F-F6C8-57112BBC2610">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>proddesc: product description</commentInRDBMS>
+<generatorID>3D9B4ACE-1620-9E42-F104-5B9947BF35F4</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prodprice" id="B2DF83BE-6E35-02A5-2DBB-5300E63A451F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>prodprice: product price</commentInRDBMS>
+<generatorID>18BC78A7-C142-D404-BAE6-1E0CE85FE3A3</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6AF6E3E-ED4F-4EEE-4F7B-A58EEA36B3A0" name="PRODUCT_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<generatorID>92C93986-5084-66D4-B9D4-A3D6A9E60CED</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8017D35-7C90-5CF7-7CF8-22B2AA4E4B93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

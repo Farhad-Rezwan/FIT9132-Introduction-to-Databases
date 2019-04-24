@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B618987D-7F2F-04BD-8793-CFB0A78F1A2A" name="CUSTOMER">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<generatorID>DC4534B0-78FC-252E-3264-B31F91684C63</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="custno" id="C19C00C5-B282-431F-11A0-93A595BE427C">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>custno: customer number</commentInRDBMS>
+<generatorID>F7AE6BC1-51DC-9EAA-3D3C-585AB91C1876</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="custname" id="4A447B3F-CCE6-00BC-6BE8-BDA5C1F89F0D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>custname: customer name</commentInRDBMS>
+<generatorID>AE4B6FB3-904C-81BF-1D07-75E4E7333327</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custaddress" id="90356724-AAE6-9B97-334E-28319F056F97">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>custaddress: customer address</commentInRDBMS>
+<generatorID>C5B0E0D7-529C-B0DD-1894-600F8B7F9CA9</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custphone" id="0EDF2E74-56D6-F76D-15A7-399F63355E87">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<commentInRDBMS>custhpone: customer phone</commentInRDBMS>
+<generatorID>271C3EB4-1B38-1D78-DA10-0885D14C4D15</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8334242-B043-D392-8C6D-4737BEE2ED3F" name="CUSTOMER_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 14:07:33 UTC</createdTime>
+<generatorID>20AA790A-6AD1-D062-2027-E44148AEEA62</generatorID>
+<ownerDesignName>cust-order</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C19C00C5-B282-431F-11A0-93A595BE427C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

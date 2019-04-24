@@ -1,0 +1,201 @@
+SQL> 
+SQL> DROP SEQUENCE customer_custno_seq;
+
+Sequence CUSTOMER_CUSTNO_SEQ dropped.
+
+SQL> 
+SQL> DROP TABLE customer CASCADE CONSTRAINTS;
+
+Table CUSTOMER dropped.
+
+SQL> 
+SQL> DROP TABLE orderline CASCADE CONSTRAINTS;
+
+Table ORDERLINE dropped.
+
+SQL> 
+SQL> DROP TABLE orders CASCADE CONSTRAINTS;
+
+Table ORDERS dropped.
+
+SQL> 
+SQL> DROP TABLE product CASCADE CONSTRAINTS;
+
+Table PRODUCT dropped.
+
+SQL> 
+SQL> CREATE TABLE customer (
+  2      custno        NUMBER(7) NOT NULL,
+  3      custname      VARCHAR2(50) NOT NULL,
+  4      custaddress   VARCHAR2(50) NOT NULL,
+  5      custphone     CHAR(10)
+  6  );
+
+Table CUSTOMER created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custno IS
+  2      'custno: customer number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custname IS
+  2      'custname: customer name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custaddress IS
+  2      'custaddress: customer address';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custphone IS
+  2      'custhpone: customer phone';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE customer ADD CONSTRAINT customer_pk PRIMARY KEY ( custno );
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> CREATE TABLE orderline (
+  2      orderno      NUMBER(7) NOT NULL,
+  3      prodno       NUMBER(7) NOT NULL,
+  4      qtyordered   NUMBER(3) NOT NULL,
+  5      lineprice    NUMBER(8, 2) NOT NULL
+  6  );
+
+Table ORDERLINE created.
+
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT chk_qtyordered CHECK ( qtyordered > 0 );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.orderno IS
+  2      'orderno: order number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.prodno IS
+  2      'prodno: product number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.qtyordered IS
+  2      'qtyordered: quantity ordered for each product';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orderline.lineprice IS
+  2      'lineprice: total price for each product in an order';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT orderline_pk PRIMARY KEY ( orderno,
+  2                                                                  prodno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE TABLE orders (
+  2      orderno     NUMBER(7) NOT NULL,
+  3      orderdate   DATE NOT NULL,
+  4      custno      NUMBER(7) NOT NULL
+  5  );
+
+Table ORDERS created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.orderno IS
+  2      'orderno: order number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.orderdate IS
+  2      'orderdate: order date';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.custno IS
+  2      'custno: customer number';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE orders ADD CONSTRAINT orders_pk PRIMARY KEY ( orderno );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> CREATE TABLE product (
+  2      prodno      NUMBER(7) NOT NULL,
+  3      proddesc    VARCHAR2(50) NOT NULL,
+  4      prodprice   NUMBER(7, 2) NOT NULL
+  5  );
+
+Table PRODUCT created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prodno IS
+  2      'prodno: product number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.proddesc IS
+  2      'proddesc: product description';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prodprice IS
+  2      'prodprice: product price';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE product ADD CONSTRAINT product_pk PRIMARY KEY ( prodno );
+
+Table PRODUCT altered.
+
+SQL> 
+SQL> ALTER TABLE orders
+  2      ADD CONSTRAINT customer_orders FOREIGN KEY ( custno )
+  3          REFERENCES customer ( custno );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT orders_orderline FOREIGN KEY ( orderno )
+  3          REFERENCES orders ( orderno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT product_orderline FOREIGN KEY ( prodno )
+  3          REFERENCES product ( prodno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE SEQUENCE customer_custno_seq START WITH 1 NOCACHE ORDER;
+
+Sequence CUSTOMER_CUSTNO_SEQ created.
+
+SQL> 
+SQL> SET ECHO OFF;
