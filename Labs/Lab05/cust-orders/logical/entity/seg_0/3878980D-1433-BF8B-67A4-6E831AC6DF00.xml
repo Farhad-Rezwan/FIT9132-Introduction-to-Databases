@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3878980D-1433-BF8B-67A4-6E831AC6DF00" name="ORDERLINE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:18:33 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="orderno" id="E0282E40-010F-C2F1-0414-00AED7986C0D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:19:51 UTC</createdTime>
+<comment>orderno: order number</comment>
+<generatorID>50916513-7D4A-85C2-2EEB-EA014699EA82</generatorID>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<referedAttribute>3AAAA340-A439-58FE-3A01-AE9F7D26A420</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prodno" id="842DF4AA-3505-52BC-A227-0BBD789AD6C1">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:21:32 UTC</createdTime>
+<comment>prodno: product number</comment>
+<generatorID>70757DE9-7803-4D4F-0C5F-2BFAF3AA592C</generatorID>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<referedAttribute>70AA104F-CE5A-8463-ACD4-795BC6DF2D9A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qtyorderd" id="648FDB07-975A-075C-6C54-782D72BE4B86">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:25:09 UTC</createdTime>
+<comment>qtyorderd: quantity ordered for each product</comment>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<constraintName>chq_qtyordered</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="qtyordered &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lineprice" id="5DCA72F0-ACD8-CFCF-CC37-25354B072D26">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:26:36 UTC</createdTime>
+<comment>lineprice: total price for each product in an order line</comment>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B4D5A019-C2AA-C21D-E02D-33E604952469" name="ORDERLINE PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-24 12:19:51 UTC</createdTime>
+<ownerDesignName>cust-orders</ownerDesignName>
+<engineerTo>
+<item key="F95DDB86-F0DA-6ABA-A267-944D69F36590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0282E40-010F-C2F1-0414-00AED7986C0D</attributeRef>
+<attributeRef>842DF4AA-3505-52BC-A227-0BBD789AD6C1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

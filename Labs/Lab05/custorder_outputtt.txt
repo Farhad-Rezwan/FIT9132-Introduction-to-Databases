@@ -1,0 +1,239 @@
+SQL> 
+SQL> DROP SEQUENCE customer_custno_seq;
+
+Error starting at line : 8 in command -
+DROP SEQUENCE customer_custno_seq
+Error report -
+ORA-02289: sequence does not exist
+02289. 00000 -  "sequence does not exist"
+*Cause:    The specified sequence does not exist, or the user does
+           not have the required privilege to perform this operation.
+*Action:   Make sure the sequence name is correct, and that you have
+           the right to perform the desired operation on this sequence.
+SQL> 
+SQL> 
+SQL> DROP TABLE customer CASCADE CONSTRAINTS;
+
+Table CUSTOMER dropped.
+
+SQL> 
+SQL> DROP TABLE orderline CASCADE CONSTRAINTS;
+
+Error starting at line : 13 in command -
+DROP TABLE orderline CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE orders CASCADE CONSTRAINTS;
+
+Error starting at line : 15 in command -
+DROP TABLE orders CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> DROP TABLE product CASCADE CONSTRAINTS;
+
+Error starting at line : 17 in command -
+DROP TABLE product CASCADE CONSTRAINTS
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> CREATE TABLE customer (
+  2      custno        NUMBER(7) NOT NULL,
+  3      custname      VARCHAR2(50) NOT NULL,
+  4      custaddress   VARCHAR2(50) NOT NULL,
+  5      custphone     CHAR(10)
+  6  );
+
+Table CUSTOMER created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custno IS
+  2      'custno: customer number';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custname IS
+  2      'custname: customer name';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custaddress IS
+  2      'custaddress: customer address';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN customer.custphone IS
+  2      'custphone: customer phone';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE customer ADD CONSTRAINT customer_pk PRIMARY KEY ( custno );
+
+Table CUSTOMER altered.
+
+SQL> 
+SQL> CREATE TABLE orderline ( 
+  2  /*  orderno: order number*/
+  3      orderno     NUMBER(7) NOT NULL, 
+  4  /*  prodno: product number*/
+  5      prodno      NUMBER(7) NOT NULL, 
+  6  /*  qtyorderd: quantity ordered for each product*/
+  7      qtyorderd   NUMBER(3) NOT NULL, 
+  8  /*  lineprice: total price for each product in an order line*/
+  9      lineprice   NUMBER(8, 2) NOT NULL
+ 10  );
+
+Table ORDERLINE created.
+
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT chq_qtyordered CHECK ( qtyordered > 0 );
+
+Error starting at line : 51 in command -
+ALTER TABLE orderline ADD CONSTRAINT chq_qtyordered CHECK ( qtyordered > 0 )
+Error report -
+ORA-00904: "QTYORDERED": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+SQL> 
+SQL> ALTER TABLE orderline ADD CONSTRAINT orderline_pk PRIMARY KEY ( orderno,
+  2                                                                  prodno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE TABLE orders ( 
+  2  /*  orderno: order number*/
+  3      orderno     NUMBER(7) NOT NULL, 
+  4  /*  orderdate: order date*/
+  5      orderdate   DATE NOT NULL,
+  6      custno      NUMBER(7) NOT NULL
+  7  );
+
+Table ORDERS created.
+
+SQL> 
+SQL> COMMENT ON COLUMN orders.custno IS
+  2      'custno: customer number';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE orders ADD CONSTRAINT orders_pk PRIMARY KEY ( orderno );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> CREATE TABLE product ( 
+  2  /*  prodno: product number*/
+  3      prodno      NUMBER(7) NOT NULL,
+  4      proddesc    VARCHAR2(50) NOT NULL,
+  5      prodprice   NUMBER(7, 2) NOT NULL
+  6  );
+
+Table PRODUCT created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.proddesc IS
+  2      'proddesc: product description';
+
+Comment created.
+
+SQL> 
+SQL> COMMENT ON COLUMN product.prodprice IS
+  2      'prodprice: product price';
+
+Comment created.
+
+SQL> 
+SQL> ALTER TABLE product ADD CONSTRAINT product_pk PRIMARY KEY ( prodno );
+
+Table PRODUCT altered.
+
+SQL> 
+SQL> ALTER TABLE orders
+  2      ADD CONSTRAINT customer_orders FOREIGN KEY ( custno )
+  3          REFERENCES customer ( custno );
+
+Table ORDERS altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT orders_orderline FOREIGN KEY ( orderno )
+  3          REFERENCES orders ( orderno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> ALTER TABLE orderline
+  2      ADD CONSTRAINT product_orderline FOREIGN KEY ( prodno )
+  3          REFERENCES product ( prodno );
+
+Table ORDERLINE altered.
+
+SQL> 
+SQL> CREATE SEQUENCE customer_custno_seq START WITH 1 NOCACHE ORDER;
+
+Sequence CUSTOMER_CUSTNO_SEQ created.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> -- Oracle SQL Developer Data Modeler Summary Report: 
+SQL> -- 
+SQL> -- CREATE TABLE                             4
+SQL> -- CREATE INDEX                             0
+SQL> -- ALTER TABLE                              8
+SQL> -- CREATE VIEW                              0
+SQL> -- ALTER VIEW                               0
+SQL> -- CREATE PACKAGE                           0
+SQL> -- CREATE PACKAGE BODY                      0
+SQL> -- CREATE PROCEDURE                         0
+SQL> -- CREATE FUNCTION                          0
+SQL> -- CREATE TRIGGER                           0
+SQL> -- ALTER TRIGGER                            0
+SQL> -- CREATE COLLECTION TYPE                   0
+SQL> -- CREATE STRUCTURED TYPE                   0
+SQL> -- CREATE STRUCTURED TYPE BODY              0
+SQL> -- CREATE CLUSTER                           0
+SQL> -- CREATE CONTEXT                           0
+SQL> -- CREATE DATABASE                          0
+SQL> -- CREATE DIMENSION                         0
+SQL> -- CREATE DIRECTORY                         0
+SQL> -- CREATE DISK GROUP                        0
+SQL> -- CREATE ROLE                              0
+SQL> -- CREATE ROLLBACK SEGMENT                  0
+SQL> -- CREATE SEQUENCE                          1
+SQL> -- CREATE MATERIALIZED VIEW                 0
+SQL> -- CREATE MATERIALIZED VIEW LOG             0
+SQL> -- CREATE SYNONYM                           0
+SQL> -- CREATE TABLESPACE                        0
+SQL> -- CREATE USER                              0
+SQL> -- 
+SQL> -- DROP TABLESPACE                          0
+SQL> -- DROP DATABASE                            0
+SQL> -- 
+SQL> -- REDACTION POLICY                         0
+SQL> -- TSDP POLICY                              0
+SQL> -- 
+SQL> -- ORDS DROP SCHEMA                         0
+SQL> -- ORDS ENABLE SCHEMA                       0
+SQL> -- ORDS ENABLE OBJECT                       0
+SQL> -- 
+SQL> -- ERRORS                                   0
+SQL> -- WARNINGS                                 0
+SQL> SET ECHO OFF;
