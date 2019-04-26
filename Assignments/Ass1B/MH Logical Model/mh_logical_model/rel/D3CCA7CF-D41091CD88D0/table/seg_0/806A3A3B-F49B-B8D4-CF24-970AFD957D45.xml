@@ -8,10 +8,10 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="admission_datetime" id="65765EF6-9782-8E26-0D55-B0439F6C360E">
+<Column name="adm_datetime" id="65765EF6-9782-8E26-0D55-B0439F6C360E">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>admission_datetime: admission date and time of a particular patient</comment>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <generatorID>F8A60C1D-F172-BC01-1833-B7927ECE1310</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -60,7 +60,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -66,6 +66,7 @@
 <commentInRDBMS>cert_for_children: nurse certified for work with children</commentInRDBMS>
 <generatorID>E74E0E94-F2DE-FC62-703E-37914798FCBE</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<constraintName>cert_chk</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>

@@ -34,7 +34,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -51,7 +51,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -92,17 +92,17 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E7CE6DA7-67BB-5C45-7F2C-0B15DD3326E7" referredColumn="13FBB90A-C46D-9958-BA00-61C1F548B8AB"/>
 </associations>
 </Column>
-<Column name="admission_datetime" id="463791F0-5048-F03E-328D-7446C5EAB33A">
+<Column name="adm_datetime" id="463791F0-5048-F03E-328D-7446C5EAB33A">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>admission_datetime: admission date and time of a particular patient</comment>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <generatorID>94E2F5EB-12FD-643F-DF52-EFC3DCFAA56D</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -127,15 +127,15 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="8A1DC4FF-961E-D1BB-DA5A-B37B88E40BAF"/>
-<colUsage columnID="463791F0-5048-F03E-328D-7446C5EAB33A"/>
 <colUsage columnID="631A23A9-14B0-C313-D4D1-2CFFC0A02D61"/>
 <colUsage columnID="78E14DA5-93A8-47C2-CEC6-1076C953C366"/>
+<colUsage columnID="463791F0-5048-F03E-328D-7446C5EAB33A"/>
 <colUsage columnID="B6906065-B437-69FC-EE91-C780388A7FE0"/>
 <colUsage columnID="855E955D-5F6B-33CE-6A34-C7C5FF77F6C9"/>
 <colUsage columnID="168803AD-C612-D178-50E4-B0AE0D62F001"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="97C22DDB-5E8E-3F23-2D43-8BB67449CBB1" name="admissionProcedure_procedureEItem">
+<ind_PK_UK id="97C22DDB-5E8E-3F23-2D43-8BB67449CBB1" name="admiProce_proceEItem">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
 <generatorID>14566E31-01C9-F6D1-6C2F-BA5FD2A9DBE1</generatorID>

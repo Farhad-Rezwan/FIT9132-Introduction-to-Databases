@@ -3,6 +3,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:35:07 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -18,6 +21,9 @@
 <commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
 <generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <referedAttribute>38032291-C86A-22E2-72DA-482EC2217417</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,6 +37,9 @@
 <commentInRDBMS>ward_code: ward code</commentInRDBMS>
 <generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <referedAttribute>7E750D8D-9ABB-F021-FDC7-4EEA129031F3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -38,12 +47,15 @@
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="admission_datetime" id="45E08C87-9DD4-3E40-9C65-6D6A8356A844">
+<Attribute name="adm_datetime" id="45E08C87-9DD4-3E40-9C65-6D6A8356A844">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:37:53 UTC</createdTime>
-<comment>admission_datetime: admission date and time of a particular patient</comment>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <referedAttribute>F8A60C1D-F172-BC01-1833-B7927ECE1310</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,6 +68,9 @@
 <commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
 <generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <referedAttribute>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -69,6 +84,10 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:36:27 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>3110B306-499A-DD35-B807-8D4A31BFE867</attributeRef>

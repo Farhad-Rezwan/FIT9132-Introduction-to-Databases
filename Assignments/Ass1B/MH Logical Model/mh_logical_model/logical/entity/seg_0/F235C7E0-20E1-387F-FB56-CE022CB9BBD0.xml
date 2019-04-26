@@ -3,6 +3,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:08:38 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -17,6 +20,9 @@
 <createdTime>2019-04-24 21:09:40 UTC</createdTime>
 <comment>item_code: item code for each extra item</comment>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -28,15 +34,23 @@
 <createdTime>2019-04-24 21:11:12 UTC</createdTime>
 <comment>item_description: description of each extra item</comment>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="item_price" id="192BD878-9F1A-FAD4-9346-E0CF592E09D0">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:12:02 UTC</createdTime>
 <commentInRDBMS>item_price: price of each extra item</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -49,6 +63,9 @@
 <createdTime>2019-04-24 21:13:52 UTC</createdTime>
 <commentInRDBMS>item_cstock: current stock of each item</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -61,12 +78,15 @@
 <commentInRDBMS>centre_code: cost centre code</commentInRDBMS>
 <generatorID>304B67AB-F16C-E2F6-F56D-B22292D7F09A</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <referedAttribute>FF163BE9-EC9C-40AF-C956-0CA19508C9D3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -74,11 +94,13 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:10:20 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</attributeRef>
-<attributeRef>4D5FFB6D-AD04-B10C-D8AB-E80429A8C4C2</attributeRef>
-<attributeRef>842DD7F6-C8C6-3723-F8B9-9778C675FDF6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

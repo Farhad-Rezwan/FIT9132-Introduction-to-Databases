@@ -43,11 +43,13 @@
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
 <listOfValues>
 <valueDef value="adjustable" description=""/>
 <valueDef value="fixed" description=""/>
 </listOfValues>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="ward_code" id="E947997E-9168-5DC9-14E7-0B0CC0AC0F65">

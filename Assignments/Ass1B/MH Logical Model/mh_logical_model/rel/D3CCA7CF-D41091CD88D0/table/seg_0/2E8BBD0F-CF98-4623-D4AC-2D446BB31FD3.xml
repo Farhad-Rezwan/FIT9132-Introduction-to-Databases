@@ -18,7 +18,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -35,7 +35,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -68,7 +68,7 @@
 <colUsage columnID="0B017AC7-FDF4-037D-F4A9-C606EF6F2CB3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F9FAAC57-A482-23E1-174A-77C6BEF6E423" name="specialisation_doctor_Specialisation">
+<ind_PK_UK id="F9FAAC57-A482-23E1-174A-77C6BEF6E423" name="speci_docSpec">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
 <generatorID>D8519AD7-F661-FEA7-53FA-D2356780B8B9</generatorID>

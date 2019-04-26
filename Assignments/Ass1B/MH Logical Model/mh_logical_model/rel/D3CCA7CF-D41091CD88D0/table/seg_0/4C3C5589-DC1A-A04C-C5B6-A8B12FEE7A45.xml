@@ -74,7 +74,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -91,17 +91,17 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="2272360D-422E-A64B-877D-0E620A1E2894" referredColumn="26185D51-B89A-41BB-BF53-3F31F78F2444"/>
 </associations>
 </Column>
-<Column name="admission_datetime" id="84146AC3-6E6F-AA0D-15D9-920028BB193D">
+<Column name="adm_datetime" id="84146AC3-6E6F-AA0D-15D9-920028BB193D">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>admission_datetime: admission date and time of a particular patient</comment>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <generatorID>97B2E441-0091-D5B6-DA12-CF0BAA07F9C3</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -124,7 +124,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -141,7 +141,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -187,7 +187,7 @@
 <colUsage columnID="73354641-CEFF-9D7C-68C2-A72A5E6F9B6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9DEF2A7E-02DD-A7FD-F85E-83185CCC73C4" name="patientAdmission_patientProcedure">
+<ind_PK_UK id="9DEF2A7E-02DD-A7FD-F85E-83185CCC73C4" name="patiAdmi_patProc">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
 <generatorID>DF8FD826-CC24-3909-5587-A6E48998990C</generatorID>

@@ -18,7 +18,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -35,17 +35,17 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="1799547A-301F-B944-F8A7-01A991DBB52B" referredColumn="E947997E-9168-5DC9-14E7-0B0CC0AC0F65"/>
 </associations>
 </Column>
-<Column name="admission_datetime" id="FAB618AA-D339-450C-39E5-D8623F826AB7">
+<Column name="adm_datetime" id="FAB618AA-D339-450C-39E5-D8623F826AB7">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>admission_datetime: admission date and time of a particular patient</comment>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <generatorID>45E08C87-9DD4-3E40-9C65-6D6A8356A844</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -68,7 +68,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -104,7 +104,7 @@
 <colUsage columnID="0ADD0945-923C-6397-B5D0-84A2612F1021"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="34205F51-23C3-B010-AF2F-0F5F6C9A494E" name="patient_admission_bedassignment">
+<ind_PK_UK id="34205F51-23C3-B010-AF2F-0F5F6C9A494E" name="pat_adm_bedassign">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
 <generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>

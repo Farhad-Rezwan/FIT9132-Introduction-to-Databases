@@ -1,8 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="patient_admission_bedassignment" directorySegmentName="seg_0" id="D9210FCA-FFE6-07E9-8757-3126174703AD">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pat_adm_bedassign" directorySegmentName="seg_0" id="D9210FCA-FFE6-07E9-8757-3126174703AD">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:37:53 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+</engineerTo>
 <sourcePk>17FB2FD9-AEFF-C7CD-E284-DFC95116A36F</sourcePk>
 <identifying>true</identifying>
 <nameOnSource>holds</nameOnSource>
