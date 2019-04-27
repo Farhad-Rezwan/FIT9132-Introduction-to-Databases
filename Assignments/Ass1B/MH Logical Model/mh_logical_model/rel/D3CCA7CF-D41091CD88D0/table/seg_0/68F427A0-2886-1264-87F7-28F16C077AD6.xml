@@ -44,7 +44,7 @@
 <Column name="item_code" id="B6906065-B437-69FC-EE91-C780388A7FE0">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>item_code: item code for each extra item</comment>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
 <generatorID>DA4875BC-2D8E-C2CC-6F32-F7A071AB4494</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>

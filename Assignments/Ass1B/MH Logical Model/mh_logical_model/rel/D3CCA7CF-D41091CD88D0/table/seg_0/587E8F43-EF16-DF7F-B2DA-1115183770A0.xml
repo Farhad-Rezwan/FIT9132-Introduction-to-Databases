@@ -40,7 +40,6 @@
 <commentInRDBMS>manager_name: manager name</commentInRDBMS>
 <generatorID>8EA11DA0-001D-78F0-191C-276A2F630F1C</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

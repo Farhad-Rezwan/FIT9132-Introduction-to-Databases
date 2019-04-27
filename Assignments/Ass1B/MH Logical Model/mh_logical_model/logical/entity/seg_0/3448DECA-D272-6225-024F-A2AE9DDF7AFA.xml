@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:44:54 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,7 +22,7 @@
 <generatorID>DD316B47-3AFF-D8C2-50FA-8D3F990E75E6</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
 </engineerTo>
 <referedAttribute>E4982A37-1AE2-738C-4A16-AEA2D376614A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -38,7 +38,7 @@
 <generatorID>8581DFF5-38C3-013D-70F2-5ED1C4041F6C</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
 </engineerTo>
 <referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,7 +53,7 @@
 <commentInRDBMS>date_assigned:  initial date a nurse is assigned to work in a ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,7 +66,7 @@
 <commentInRDBMS>date_completed: when a nurse finishes an allocaiton with a particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -80,8 +80,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:45:26 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FFCFB0D5-D5E1-468F-B462-7A0540588ADF" value="true"/>
+<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

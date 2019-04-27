@@ -18,7 +18,7 @@
 <Attribute name="item_code" id="4BEE00D0-F7AE-F857-11FC-C906BF530AE9">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:09:40 UTC</createdTime>
-<comment>item_code: item code for each extra item</comment>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
 <item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
@@ -32,7 +32,7 @@
 <Attribute name="item_description" id="5F29AA7B-5115-EBE3-528C-67BFF3C2C17E">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:11:12 UTC</createdTime>
-<comment>item_description: description of each extra item</comment>
+<commentInRDBMS>item_description: description of each extra item</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
 <item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
@@ -86,7 +86,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

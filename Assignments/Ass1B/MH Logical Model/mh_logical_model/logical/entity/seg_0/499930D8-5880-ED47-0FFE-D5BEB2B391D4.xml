@@ -85,8 +85,8 @@
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>3</dataTypeSize>
 <listOfValues>
-<valueDef value="NO" description=""/>
-<valueDef value="YES" description=""/>
+<valueDef value="NO" description="if the nurse is not certified"/>
+<valueDef value="YES" description="if the nurse is certified"/>
 </listOfValues>
 <ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>

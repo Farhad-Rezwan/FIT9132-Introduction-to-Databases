@@ -50,7 +50,7 @@
 <Column name="bed_available" id="7E9C1E8C-16A0-00DD-C6A3-1438A87631E6">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>bed_available: number of currently available beds</comment>
+<commentInRDBMS>bed_available: number of currently available beds</commentInRDBMS>
 <generatorID>1FA6F492-D2A3-D9F7-1486-0765E280E000</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>

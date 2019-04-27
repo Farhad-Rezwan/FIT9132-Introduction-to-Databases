@@ -11,7 +11,7 @@
 <Column name="item_code" id="F6B0BC09-F6A4-D564-593B-ADD518773632">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>item_code: item code for each extra item</comment>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
 <generatorID>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -24,7 +24,7 @@
 <Column name="item_description" id="0E5259C8-66B7-31FE-E1A1-10D35F6578BC">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:37:58 UTC</createdTime>
-<comment>item_description: description of each extra item</comment>
+<commentInRDBMS>item_description: description of each extra item</commentInRDBMS>
 <generatorID>5F29AA7B-5115-EBE3-528C-67BFF3C2C17E</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
