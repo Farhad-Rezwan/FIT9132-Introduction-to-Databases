@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50D249EA-1E56-340C-8E77-09986B3221B5" name="PAT-E-ITEM">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>E770E45E-D6BF-C31A-EEDB-27A2A422C036</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adm_number" id="78B1B30C-D888-E092-D0AC-AADB2B88674F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>FFD4FEBE-A76C-508F-56AB-7C6D82CD4D41</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D5B0C6F-C58F-D396-CA47-79E1EB7E392D" referredColumn="317F3340-A0D3-C614-088C-C13AF3A15411"/>
+</associations>
+</Column>
+<Column name="carried_out_on" id="DA0D88FB-D33D-3810-626F-56AA8C3E2ECF">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
+<generatorID>75C70B84-AE1C-C9B3-D21B-61A423A78848</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D5B0C6F-C58F-D396-CA47-79E1EB7E392D" referredColumn="F291AE8B-7634-1607-1509-FD559312AFC6"/>
+</associations>
+</Column>
+<Column name="item_code" id="4008F5B9-BFC2-39F0-CDED-5C10FAF2B806">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
+<generatorID>4EEC8E34-C3AB-F5B7-F0CF-C17876DE0596</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37E76572-3603-618B-3EF2-1B761A629BCE" referredColumn="2DCDA4B8-8D78-8C51-0D7A-A11E999D4075"/>
+</associations>
+</Column>
+<Column name="procedure_code1" id="61FD197A-49C7-3584-6836-A3A60FF6627A">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>926F0FD3-CCD1-F6F2-0FBB-20508BBA42CC</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D5B0C6F-C58F-D396-CA47-79E1EB7E392D" referredColumn="486D3B95-F65F-72AC-6228-234738540BFC"/>
+</associations>
+</Column>
+<Column name="patient_id" id="DD257002-E4E8-F905-2EC2-37E2E481B46D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>CC8168A5-8443-DC18-859C-DF3CAF4A63F9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D5B0C6F-C58F-D396-CA47-79E1EB7E392D" referredColumn="46E7D2A5-B644-DF25-6299-8951E5BBA94F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20E20FE1-5002-679E-59C0-BE3E8CAC8828" name="PAT-E-ITEM_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>441F2C07-FBC6-EA6B-5AC3-A9A8045E8980</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD257002-E4E8-F905-2EC2-37E2E481B46D"/>
+<colUsage columnID="78B1B30C-D888-E092-D0AC-AADB2B88674F"/>
+<colUsage columnID="DA0D88FB-D33D-3810-626F-56AA8C3E2ECF"/>
+<colUsage columnID="61FD197A-49C7-3584-6836-A3A60FF6627A"/>
+<colUsage columnID="4008F5B9-BFC2-39F0-CDED-5C10FAF2B806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D07A6D45-D463-0E9B-E556-8905AA680D7E" name="e-item_pat-e-item">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>91E410EA-C987-003C-175D-40FD7D6A0DB7</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4008F5B9-BFC2-39F0-CDED-5C10FAF2B806"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B18FB029-23EE-710D-DD25-1298CBA13D19" name="pat-procedure_pat-e-item">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD257002-E4E8-F905-2EC2-37E2E481B46D"/>
+<colUsage columnID="78B1B30C-D888-E092-D0AC-AADB2B88674F"/>
+<colUsage columnID="DA0D88FB-D33D-3810-626F-56AA8C3E2ECF"/>
+<colUsage columnID="61FD197A-49C7-3584-6836-A3A60FF6627A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

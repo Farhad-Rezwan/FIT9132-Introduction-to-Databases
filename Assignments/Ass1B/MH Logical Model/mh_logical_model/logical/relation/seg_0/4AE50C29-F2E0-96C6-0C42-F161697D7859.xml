@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="patient_pat-admission" directorySegmentName="seg_0" id="4AE50C29-F2E0-96C6-0C42-F161697D7859">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 12:49:35 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>E5602E10-5973-B987-ED48-A78FDC900485</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>takes</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A8B8D68D-638B-D21F-BECB-7ACCAFAE4744</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0</targetEntity>
+<transferable>true</transferable>
+</Relation>

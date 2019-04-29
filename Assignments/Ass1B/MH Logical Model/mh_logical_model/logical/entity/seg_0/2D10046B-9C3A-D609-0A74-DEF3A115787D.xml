@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:36:42 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,13 +21,13 @@
 <commentInRDBMS>ward_code: ward code</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ward_name" id="BBE86FD9-89C4-C731-0568-814A3D5CF858">
 <createdBy>farhadullahrezwan</createdBy>
@@ -35,7 +35,7 @@
 <commentInRDBMS>ward_name: name of the ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -49,7 +49,7 @@
 <commentInRDBMS>total_beds: total number of beds in each ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,13 +57,13 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bed_available" id="1FA6F492-D2A3-D9F7-1486-0765E280E000">
+<Attribute name="beds_available" id="1FA6F492-D2A3-D9F7-1486-0765E280E000">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:40:43 UTC</createdTime>
-<commentInRDBMS>bed_available: number of currently available beds</commentInRDBMS>
+<commentInRDBMS>beds_available: number of currently available beds</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -77,9 +77,8 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:37:43 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="specialisation_doctor-spec" directorySegmentName="seg_0" id="ECC41746-2BA6-5C03-E5D8-FCAF299BA750">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:02:07 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>757C9BD6-371D-A0EA-CF78-C9F04EF750F0</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>belongs_to</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9341A1FF-A067-F1C0-32BB-6DDBC90FC383</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BD3463AA-35C5-84C5-8CCF-6DBC9A0C86EB</targetEntity>
+<transferable>true</transferable>
+</Relation>

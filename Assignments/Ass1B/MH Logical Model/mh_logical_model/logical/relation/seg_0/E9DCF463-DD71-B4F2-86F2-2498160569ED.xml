@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="procedure_pat-procedure" directorySegmentName="seg_0" id="E9DCF463-DD71-B4F2-86F2-2498160569ED">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:53:15 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>113CA80B-287E-9013-A339-28B433534E3F</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>requires</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F2A1C804-5ABA-D766-8A5D-574053D354BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B37467E-7324-891F-E987-26961995C226</targetEntity>
+<transferable>true</transferable>
+</Relation>

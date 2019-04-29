@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ward_bed" directorySegmentName="seg_0" id="A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:44:44 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>10CB909E-1146-94D1-3EAE-9DF7AB7F6631</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2D10046B-9C3A-D609-0A74-DEF3A115787D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B06B0DD-D323-5B10-4AD7-BFF0ABDF5EA1</targetEntity>
+<transferable>true</transferable>
+</Relation>

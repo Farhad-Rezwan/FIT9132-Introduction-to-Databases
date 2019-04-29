@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30DBD3C0-AC30-E458-AD7F-B34986B9622A" name="SPECIALISATION">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>9341A1FF-A067-F1C0-32BB-6DDBC90FC383</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="specialisation_id" id="C1E31634-D088-3C7F-E7BD-130462A4F7F9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>specialisation_id: doctor specialisation id</commentInRDBMS>
+<generatorID>809F5F80-C855-8CF3-1F51-74DEA878BDDD</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="specialisation_name" id="4CBD5C17-FBD8-F98B-AA58-4F9CEFBBA336">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>specialisation_name: doctor&apos;s specialisation name</commentInRDBMS>
+<generatorID>8F0F7349-86F9-E4FC-07B3-3ADF9469BE57</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CD5A40E-3415-6566-6892-E58B85343A74" name="SPECIALISATION_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>757C9BD6-371D-A0EA-CF78-C9F04EF750F0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1E31634-D088-3C7F-E7BD-130462A4F7F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AD9BB3B-D341-A05B-20B6-DA5B069EA78F" name="SPECIALISATION_NK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>C88D480C-93D0-4580-4F70-A19F1A048C55</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CBD5C17-FBD8-F98B-AA58-4F9CEFBBA336"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

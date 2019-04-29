@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cost-centre_e-item" directorySegmentName="seg_0" id="05C21D6D-2784-B9B9-1990-6E2AAD3694E3">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:50:09 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>85FE6E91-0859-6C8D-74EF-8FD3E3D1679F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>assigned_to</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3D9B5AF8-3563-0AF9-2F74-8E9B26C4220D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F235C7E0-20E1-387F-FB56-CE022CB9BBD0</targetEntity>
+<transferable>true</transferable>
+</Relation>

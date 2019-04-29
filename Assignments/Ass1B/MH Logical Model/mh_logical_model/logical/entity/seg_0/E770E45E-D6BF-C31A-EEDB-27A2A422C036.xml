@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E770E45E-D6BF-C31A-EEDB-27A2A422C036" name="PAT-E-ITEM">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 12:45:36 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="adm_number" id="FFD4FEBE-A76C-508F-56AB-7C6D82CD4D41">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:42:38 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>D1C6B78A-FE86-952F-E7F3-B8E6ED8B26C3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="carried_out_on" id="75C70B84-AE1C-C9B3-D21B-61A423A78848">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:42:38 UTC</createdTime>
+<commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>BC91F747-807F-E32E-91E8-9AF1F7B11518</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_code" id="4EEC8E34-C3AB-F5B7-F0CF-C17876DE0596">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:45:31 UTC</createdTime>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
+<generatorID>91E410EA-C987-003C-175D-40FD7D6A0DB7</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure_code1" id="926F0FD3-CCD1-F6F2-0FBB-20508BBA42CC">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:53:15 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>3F1FE96C-E0AE-CF5F-96CB-39C66289E7A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="patient_id" id="CC8168A5-8443-DC18-859C-DF3CAF4A63F9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:50:14 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>79A68F70-6B8F-5676-B136-E2ECA8D5CADE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="441F2C07-FBC6-EA6B-5AC3-A9A8045E8980" name="PAT-E-ITEM PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:21:23 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CC8168A5-8443-DC18-859C-DF3CAF4A63F9</attributeRef>
+<attributeRef>FFD4FEBE-A76C-508F-56AB-7C6D82CD4D41</attributeRef>
+<attributeRef>75C70B84-AE1C-C9B3-D21B-61A423A78848</attributeRef>
+<attributeRef>926F0FD3-CCD1-F6F2-0FBB-20508BBA42CC</attributeRef>
+<attributeRef>4EEC8E34-C3AB-F5B7-F0CF-C17876DE0596</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

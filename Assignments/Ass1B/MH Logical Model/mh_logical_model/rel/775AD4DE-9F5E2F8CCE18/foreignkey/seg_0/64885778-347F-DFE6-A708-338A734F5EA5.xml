@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="64885778-347F-DFE6-A708-338A734F5EA5" containerWithKeyObject="EA6C9053-D1C6-45CF-2884-9AFC72187CFF" localFKIndex="5A733213-FE7F-02DD-D3E0-9013392A8007" name="doctor_pat-procedure">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>8B984EC4-FA8A-5164-EB9F-B6A08A8F6BE0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referredTableLongName>DOCTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17EBBF32-3DF1-B562-79BF-6C30246FA64F</referredTableID>
+<keyObject>E957BDFA-2C27-063E-1764-CE6815E7FA73</keyObject>
+<referredKeyID>E957BDFA-2C27-063E-1764-CE6815E7FA73</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>doctor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

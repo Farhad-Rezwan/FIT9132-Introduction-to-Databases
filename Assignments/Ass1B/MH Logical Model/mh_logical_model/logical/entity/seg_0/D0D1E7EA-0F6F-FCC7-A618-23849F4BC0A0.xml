@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0" name="PATIENT_ADMISSION">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0" name="PAT-ADMISSION">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:41:42 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,18 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="adm_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
+<Attribute name="adm_number" id="3432D424-A9B2-AEB9-2F72-852F8FECEE83">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:42:31 UTC</createdTime>
-<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
+<createdTime>2019-04-29 12:59:29 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="discharge_datetime" id="4D2D32C0-DADD-2C30-4AF1-B96EC4834C38">
 <createdBy>farhadullahrezwan</createdBy>
@@ -34,7 +35,7 @@
 <comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,14 +43,14 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="patient_id" id="7EA195F0-41F8-8BA0-6331-2464DA8E2BB6">
+<Attribute name="patient_id" id="BD84015E-A289-D015-1B62-2A951311A265">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:57:06 UTC</createdTime>
+<createdTime>2019-04-29 12:49:35 UTC</createdTime>
 <commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
-<generatorID>FEFF45A8-6DD2-CB73-3EB9-50E7BE57689A</generatorID>
+<generatorID>4AE50C29-F2E0-96C6-0C42-F161697D7859</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <referedAttribute>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,21 +59,34 @@
 <dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="doctor_id" id="A81C4DBD-E197-6D6D-DED3-E762AF14B42B">
+<Attribute name="adm_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:59:03 UTC</createdTime>
-<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
-<generatorID>36361BD9-18CE-591B-617C-7141DE9DC9FB</generatorID>
+<createdTime>2019-04-24 18:42:31 UTC</createdTime>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="supvdoctor_id" id="38092E96-CCAC-09FB-E013-8681FF9F54B1">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:07:16 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>2CD08A30-1039-E89D-BCD8-7F58AD330EA3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -80,14 +94,26 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:49:28 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
+<attributeRef>BD84015E-A289-D015-1B62-2A951311A265</attributeRef>
+<attributeRef>3432D424-A9B2-AEB9-2F72-852F8FECEE83</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E980F75A-31AF-9BE3-5469-A95CF219614C" name="PAT-ADMISSION_NK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:01:36 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<newElementsIDs>4AE50C29-F2E0-96C6-0C42-F161697D7859,F8A60C1D-F172-BC01-1833-B7927ECE1310</newElementsIDs>
+<usedAttributes>
+<attributeRef>BD84015E-A289-D015-1B62-2A951311A265</attributeRef>
 <attributeRef>F8A60C1D-F172-BC01-1833-B7927ECE1310</attributeRef>
-<attributeRef>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

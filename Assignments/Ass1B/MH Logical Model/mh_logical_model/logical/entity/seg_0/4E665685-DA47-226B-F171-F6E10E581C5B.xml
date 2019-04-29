@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E665685-DA47-226B-F171-F6E10E581C5B" name="BEDASSIGNMENT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E665685-DA47-226B-F171-F6E10E581C5B" name="B-ASSIGNMENT">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:35:07 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,14 +15,30 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="bed_no" id="3110B306-499A-DD35-B807-8D4A31BFE867">
+<Attribute name="adm_number" id="0E1FCE4A-2177-87CE-E75B-321A1A941E94">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:36:27 UTC</createdTime>
-<commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
-<generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
+<createdTime>2019-04-29 14:38:02 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>3432D424-A9B2-AEB9-2F72-852F8FECEE83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bed_number" id="59D1A78F-38B3-DDB0-97DA-D89E8F677A9D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:40:35 UTC</createdTime>
+<commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
+<generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <referedAttribute>38032291-C86A-22E2-72DA-482EC2217417</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -31,47 +47,32 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ward_code" id="EC27E6D3-E5A9-60CB-525B-94DA0370BDD2">
+<Attribute name="ward_code" id="E48832B2-BF06-B831-5936-4DC8CB618092">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:36:27 UTC</createdTime>
+<createdTime>2019-04-29 14:44:44 UTC</createdTime>
 <commentInRDBMS>ward_code: ward code</commentInRDBMS>
-<generatorID>0B3A031F-0D6B-14D6-C611-FD1D1E3E732D</generatorID>
+<generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
-<referedAttribute>7E750D8D-9ABB-F021-FDC7-4EEA129031F3</referedAttribute>
+<referedAttribute>2AD3444B-E817-60B1-CF67-A19EF33E1703</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="adm_datetime" id="45E08C87-9DD4-3E40-9C65-6D6A8356A844">
+<Attribute name="patient_id" id="F442C8FD-0FD0-62F1-BB8C-4184FB1893DC">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:37:53 UTC</createdTime>
-<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
-<generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
-</engineerTo>
-<referedAttribute>F8A60C1D-F172-BC01-1833-B7927ECE1310</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="patient_id" id="1198AA46-32CD-5007-74E8-96330CD553C3">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:37:53 UTC</createdTime>
+<createdTime>2019-04-29 14:50:14 UTC</createdTime>
 <commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
-<generatorID>D9210FCA-FFE6-07E9-8757-3126174703AD</generatorID>
+<generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
-<referedAttribute>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</referedAttribute>
+<referedAttribute>BD84015E-A289-D015-1B62-2A951311A265</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -84,16 +85,15 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:36:27 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>3110B306-499A-DD35-B807-8D4A31BFE867</attributeRef>
-<attributeRef>EC27E6D3-E5A9-60CB-525B-94DA0370BDD2</attributeRef>
-<attributeRef>45E08C87-9DD4-3E40-9C65-6D6A8356A844</attributeRef>
-<attributeRef>1198AA46-32CD-5007-74E8-96330CD553C3</attributeRef>
+<attributeRef>F442C8FD-0FD0-62F1-BB8C-4184FB1893DC</attributeRef>
+<attributeRef>0E1FCE4A-2177-87CE-E75B-321A1A941E94</attributeRef>
+<attributeRef>59D1A78F-38B3-DDB0-97DA-D89E8F677A9D</attributeRef>
+<attributeRef>E48832B2-BF06-B831-5936-4DC8CB618092</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

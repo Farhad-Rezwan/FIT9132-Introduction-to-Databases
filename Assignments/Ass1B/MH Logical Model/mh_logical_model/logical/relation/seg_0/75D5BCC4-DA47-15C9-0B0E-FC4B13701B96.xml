@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pat-admission_b-assignment" directorySegmentName="seg_0" id="75D5BCC4-DA47-15C9-0B0E-FC4B13701B96">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:38:02 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>17FB2FD9-AEFF-C7CD-E284-DFC95116A36F</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>assigns_to</nameOnSource>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4E665685-DA47-226B-F171-F6E10E581C5B</targetEntity>
+<transferable>true</transferable>
+</Relation>

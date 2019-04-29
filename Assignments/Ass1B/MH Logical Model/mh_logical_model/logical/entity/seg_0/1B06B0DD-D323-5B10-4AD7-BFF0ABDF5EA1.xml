@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:54:18 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,13 +15,13 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="bed_no" id="38032291-C86A-22E2-72DA-482EC2217417">
+<Attribute name="bed_number" id="38032291-C86A-22E2-72DA-482EC2217417">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:55:04 UTC</createdTime>
-<commentInRDBMS>bed_no: bed number withina particular ward</commentInRDBMS>
+<commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <commentInRDBMS>bed_phone_no: bedside telephone number</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -50,33 +50,34 @@
 <commentInRDBMS>bed_type: beds are classified as either fixed or adjustable</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
+<constraintName>chk_bedtype</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
 <listOfValues>
-<valueDef value="adjustable" description=""/>
-<valueDef value="fixed" description=""/>
+<valueDef value="adjustable" description="bed type is adjustable"/>
+<valueDef value="fixed" description="bed type is fixed"/>
 </listOfValues>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ward_code" id="7E750D8D-9ABB-F021-FDC7-4EEA129031F3">
+<Attribute name="ward_code" id="2AD3444B-E817-60B1-CF67-A19EF33E1703">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:34:11 UTC</createdTime>
+<createdTime>2019-04-29 14:44:44 UTC</createdTime>
 <commentInRDBMS>ward_code: ward code</commentInRDBMS>
-<generatorID>2D0A4449-8F2E-CBA1-B208-743699F48BC1</generatorID>
+<generatorID>A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -84,14 +85,13 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:57:49 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>38032291-C86A-22E2-72DA-482EC2217417</attributeRef>
-<attributeRef>7E750D8D-9ABB-F021-FDC7-4EEA129031F3</attributeRef>
+<attributeRef>2AD3444B-E817-60B1-CF67-A19EF33E1703</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

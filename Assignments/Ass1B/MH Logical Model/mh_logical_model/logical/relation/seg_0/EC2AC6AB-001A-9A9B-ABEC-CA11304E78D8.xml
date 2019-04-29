@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_pat-procedurev2" directorySegmentName="seg_0" id="EC2AC6AB-001A-9A9B-ABEC-CA11304E78D8">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:31:38 UTC</createdTime>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<sourcePk>5CE899FA-7D04-6F64-2120-E33BDDBE281F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>completes</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>80907D7C-6AC8-490C-3947-29DFEEA740F4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B37467E-7324-891F-E987-26961995C226</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60633631-7F44-25C0-BE0C-C76EF0FBCF79" name="PAT-ADMISSION">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adm_number" id="EF3D1F63-6E65-E3DD-9A19-3723552D49C9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>3432D424-A9B2-AEB9-2F72-852F8FECEE83</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="discharge_datetime" id="FC94EE2C-B763-0E8F-D9B3-8B5972F8F9CC">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
+<generatorID>4D2D32C0-DADD-2C30-4AF1-B96EC4834C38</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_id" id="F598EDA8-8C84-06E5-16B0-CC3C61BC4CAD">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>BD84015E-A289-D015-1B62-2A951311A265</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14823D5A-148E-078B-03C4-402FB0236512" referredColumn="52ACFF9A-A580-796A-8900-819F5605615C"/>
+</associations>
+</Column>
+<Column name="adm_datetime" id="71947479-6345-FDB1-ECAC-CA50D023B83E">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
+<generatorID>F8A60C1D-F172-BC01-1833-B7927ECE1310</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supvdoctor_id" id="7733DDAD-17EA-8870-2669-735E424633F2">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>38092E96-CCAC-09FB-E013-8681FF9F54B1</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6B4D0E8-E98F-AE5C-BEFF-C2529A34B3F6" referredColumn="24727CA1-6033-B6E9-A965-32728B376BCA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEBE2F1B-E2A3-99E9-2DAC-9C11BDC8569E" name="PATIENT_ADMISSION_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>17FB2FD9-AEFF-C7CD-E284-DFC95116A36F</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F598EDA8-8C84-06E5-16B0-CC3C61BC4CAD"/>
+<colUsage columnID="EF3D1F63-6E65-E3DD-9A19-3723552D49C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3195D53C-30DA-973A-85C2-D335CBBEA31D" name="PAT-ADMISSION_NK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>E980F75A-31AF-9BE3-5469-A95CF219614C</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F598EDA8-8C84-06E5-16B0-CC3C61BC4CAD"/>
+<colUsage columnID="71947479-6345-FDB1-ECAC-CA50D023B83E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD1D67BF-FA47-BF6F-56E5-AFAF97CD061C" name="doctor_pat-admission">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>2CD08A30-1039-E89D-BCD8-7F58AD330EA3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7733DDAD-17EA-8870-2669-735E424633F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="525EC540-232C-F593-F572-EF1A750A3044" name="patient_pat-admission">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:55:37 UTC</createdTime>
+<generatorID>4AE50C29-F2E0-96C6-0C42-F161697D7859</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F598EDA8-8C84-06E5-16B0-CC3C61BC4CAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

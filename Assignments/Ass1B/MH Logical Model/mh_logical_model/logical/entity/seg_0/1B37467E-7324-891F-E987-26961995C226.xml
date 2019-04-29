@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B37467E-7324-891F-E987-26961995C226" name="PATIENT_PROCEDURE">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B37467E-7324-891F-E987-26961995C226" name="PAT-PROCEDURE">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:43:33 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +34,7 @@
 <commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,7 +48,7 @@
 <commentInRDBMS>procedure_charge: procedure charge to patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -64,7 +64,7 @@
 <commentInRDBMS>totalextras_charges: total extras charges to patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,14 +74,46 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="doctor_id" id="2D86C0BB-EACF-2BE4-CB8D-98E3B23FFE7D">
+<Attribute name="adm_number" id="D1C6B78A-FE86-952F-E7F3-B8E6ED8B26C3">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:58:01 UTC</createdTime>
-<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
-<generatorID>53AD2DCC-84EF-826D-C1C6-4C83814DEDE5</generatorID>
+<createdTime>2019-04-29 13:13:16 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>C700E7B0-0441-07F8-566B-B8C79FA453A0</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>3432D424-A9B2-AEB9-2F72-852F8FECEE83</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="procedure_code1" id="3F1FE96C-E0AE-CF5F-96CB-39C66289E7A9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 13:53:15 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>E9DCF463-DD71-B4F2-86F2-2498160569ED</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+</engineerTo>
+<referedAttribute>30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reqdoctor_id" id="2EF475C0-C906-1E2E-FE79-799079ACB67B">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:19:50 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>8B984EC4-FA8A-5164-EB9F-B6A08A8F6BE0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
@@ -91,14 +123,14 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="doctor_id1" id="C32F9EF8-5418-0962-F6EB-8F8D6E464BC8">
+<Attribute name="doccarried_id" id="E7D2985C-EF2D-D5A2-A85A-DA325047CBBE">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 20:59:37 UTC</createdTime>
+<createdTime>2019-04-29 14:31:38 UTC</createdTime>
 <commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
-<generatorID>172FD49D-8B6A-AA6A-674A-4B81F25981CD</generatorID>
+<generatorID>EC2AC6AB-001A-9A9B-ABEC-CA11304E78D8</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -107,52 +139,21 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="adm_datetime" id="97B2E441-0091-D5B6-DA12-CF0BAA07F9C3">
+<Attribute name="patient_id" id="79A68F70-6B8F-5676-B136-E2ECA8D5CADE">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 21:06:40 UTC</createdTime>
-<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
-<generatorID>DF8FD826-CC24-3909-5587-A6E48998990C</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
-</engineerTo>
-<referedAttribute>F8A60C1D-F172-BC01-1833-B7927ECE1310</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="patient_id" id="6476592B-1B18-0346-D875-6B5434BD56BA">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 21:06:40 UTC</createdTime>
+<createdTime>2019-04-29 14:50:14 UTC</createdTime>
 <commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
-<generatorID>DF8FD826-CC24-3909-5587-A6E48998990C</generatorID>
+<generatorID>C700E7B0-0441-07F8-566B-B8C79FA453A0</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
-<referedAttribute>7EA195F0-41F8-8BA0-6331-2464DA8E2BB6</referedAttribute>
+<referedAttribute>BD84015E-A289-D015-1B62-2A951311A265</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="procedure_code1" id="C6F765C1-53BE-BE44-E6F2-446FA5F3B212">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 21:34:02 UTC</createdTime>
-<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
-<generatorID>E2880E0F-77A7-9322-6C10-9CF7975E4BC9</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="true"/>
-</engineerTo>
-<referedAttribute>30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -160,16 +161,15 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:45:54 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D3CCA7CF-EC60-162C-456A-D41091CD88D0" value="false"/>
+<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
+<attributeRef>79A68F70-6B8F-5676-B136-E2ECA8D5CADE</attributeRef>
+<attributeRef>D1C6B78A-FE86-952F-E7F3-B8E6ED8B26C3</attributeRef>
 <attributeRef>BC91F747-807F-E32E-91E8-9AF1F7B11518</attributeRef>
-<attributeRef>97B2E441-0091-D5B6-DA12-CF0BAA07F9C3</attributeRef>
-<attributeRef>6476592B-1B18-0346-D875-6B5434BD56BA</attributeRef>
-<attributeRef>C6F765C1-53BE-BE44-E6F2-446FA5F3B212</attributeRef>
+<attributeRef>3F1FE96C-E0AE-CF5F-96CB-39C66289E7A9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
