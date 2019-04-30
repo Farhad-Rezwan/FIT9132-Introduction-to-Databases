@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:44:54 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,11 +21,27 @@
 <commentInRDBMS>date_assigned:  initial date a nurse is assigned to work in a ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nurse_id" id="AE9DFF7A-C9CB-B25F-3341-1BC7AEAEB07D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:46:51 UTC</createdTime>
+<commentInRDBMS>nurse_id: unique nurse id</commentInRDBMS>
+<generatorID>5D69E3A4-D5FB-3D53-CB38-FCD866B5A7EC</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
+<referedAttribute>E4982A37-1AE2-738C-4A16-AEA2D376614A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="date_completed" id="A573642D-2896-4FC8-35F7-97D9AA375138">
@@ -34,7 +50,7 @@
 <commentInRDBMS>date_completed: when a nurse finishes an allocaiton with a particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -49,30 +65,14 @@
 <generatorID>4A9EB173-1A13-9533-C4A2-EB2C2DA44620</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="nurse_id" id="AE9DFF7A-C9CB-B25F-3341-1BC7AEAEB07D">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-29 14:46:51 UTC</createdTime>
-<commentInRDBMS>nurse_id: unique nurse id</commentInRDBMS>
-<generatorID>5D69E3A4-D5FB-3D53-CB38-FCD866B5A7EC</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
-</engineerTo>
-<referedAttribute>E4982A37-1AE2-738C-4A16-AEA2D376614A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -80,12 +80,14 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:45:26 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>AFD34AAD-277A-5525-AB05-1B5B24ACE51E</attributeRef>
+<attributeRef>AE9DFF7A-C9CB-B25F-3341-1BC7AEAEB07D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

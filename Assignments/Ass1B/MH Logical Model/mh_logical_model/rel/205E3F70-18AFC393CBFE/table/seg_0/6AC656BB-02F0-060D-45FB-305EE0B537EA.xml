@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AC656BB-02F0-060D-45FB-305EE0B537EA" name="PAT_EITEM">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>E770E45E-D6BF-C31A-EEDB-27A2A422C036</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adm_number" id="B6AC6816-85EC-AFCA-AB77-2303F2753CBF">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>FFD4FEBE-A76C-508F-56AB-7C6D82CD4D41</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8B0936F-A2DC-AFBF-171F-76E6DE311141" referredColumn="77E4C51B-E829-60E2-4EDA-765EEBB1F93F"/>
+</associations>
+</Column>
+<Column name="carried_out_on" id="D38B0C6F-578E-3829-1604-C592FCA0602B">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
+<generatorID>75C70B84-AE1C-C9B3-D21B-61A423A78848</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8B0936F-A2DC-AFBF-171F-76E6DE311141" referredColumn="C239ACA6-5065-36AC-9894-46AE8006C5D7"/>
+</associations>
+</Column>
+<Column name="item_code" id="F3D9C078-0B70-FCF3-9592-A9F5F5BAB27F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
+<generatorID>4EEC8E34-C3AB-F5B7-F0CF-C17876DE0596</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50C3C7B9-497C-9AF3-F6E7-14259B74D68E" referredColumn="0A617744-10FE-AA54-99F3-745DF361A99F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB35AE36-BE2A-F610-407D-AF1D914E426D" name="PAT-E-ITEM_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>441F2C07-FBC6-EA6B-5AC3-A9A8045E8980</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6AC6816-85EC-AFCA-AB77-2303F2753CBF"/>
+<colUsage columnID="D38B0C6F-578E-3829-1604-C592FCA0602B"/>
+<colUsage columnID="F3D9C078-0B70-FCF3-9592-A9F5F5BAB27F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1264ECAF-E73F-00C0-665B-D59452F0498C" name="e_item_pat_eitem">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>91E410EA-C987-003C-175D-40FD7D6A0DB7</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3D9C078-0B70-FCF3-9592-A9F5F5BAB27F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="009A5BAE-F00F-ED7A-65DC-514D48E33888" name="pat_procedure_pat_eitem">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6AC6816-85EC-AFCA-AB77-2303F2753CBF"/>
+<colUsage columnID="D38B0C6F-578E-3829-1604-C592FCA0602B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

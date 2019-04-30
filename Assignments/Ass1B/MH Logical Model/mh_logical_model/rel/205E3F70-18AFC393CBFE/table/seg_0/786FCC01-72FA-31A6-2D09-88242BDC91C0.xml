@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="786FCC01-72FA-31A6-2D09-88242BDC91C0" name="PATIENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>A8B8D68D-638B-D21F-BECB-7ACCAFAE4744</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="patient_id" id="C27B32A0-63F4-5EB7-41BF-75724360AB27">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
+<generatorID>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="patient_fname" id="E3DA8739-9C02-B5CF-7F1B-0D473A73DDF0">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_fname: patient first name</commentInRDBMS>
+<generatorID>8A9E7BA4-3D1C-AF73-1EE0-6A3B34B11F55</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_lname" id="6CA6CD52-FB8C-6CE0-EA54-3BBFFEA4C1DD">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_lname: patient last name</commentInRDBMS>
+<generatorID>7421E8A2-D1B3-4697-2402-BCC079F07623</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_address" id="CE0436DA-D868-955A-DAC4-E7202B66F324">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_address: patient address</commentInRDBMS>
+<generatorID>CBBEE3F5-763F-3E1B-F9FB-E475FE6B3BAB</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_dob" id="22E9E1B7-2970-EF16-9936-58E71FBAAA9D">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_dob: patient date of birth</commentInRDBMS>
+<generatorID>703D7C6C-8308-0121-E01F-DD18D4275973</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_enumber" id="A31889D0-6D2F-55BD-9A30-BDA2599C6092">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>patient_enumber: patient emergency contact number</commentInRDBMS>
+<generatorID>EBFF5FB5-A887-4597-0E3F-002BF55E69CC</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6316935-53A9-7F57-ECE6-A6BCE901D1BC" name="PATIENT_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>E5602E10-5973-B987-ED48-A78FDC900485</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C27B32A0-63F4-5EB7-41BF-75724360AB27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

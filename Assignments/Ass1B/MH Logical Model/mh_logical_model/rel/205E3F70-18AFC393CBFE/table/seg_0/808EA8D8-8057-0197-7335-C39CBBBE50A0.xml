@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="808EA8D8-8057-0197-7335-C39CBBBE50A0" name="W_ASSIGNMENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>3448DECA-D272-6225-024F-A2AE9DDF7AFA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_assigned" id="91FE58F0-0612-AFFD-870C-21F2C34C70A5">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>date_assigned:  initial date a nurse is assigned to work in a ward</commentInRDBMS>
+<generatorID>AFD34AAD-277A-5525-AB05-1B5B24ACE51E</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nurse_id" id="F7184D4B-15EA-E8C7-BEEB-1774B0897712">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>nurse_id: unique nurse id</commentInRDBMS>
+<generatorID>AE9DFF7A-C9CB-B25F-3341-1BC7AEAEB07D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69111F1C-96EB-7DF2-2663-3224845A9BB9" referredColumn="664E80E0-DE5E-8956-1E08-448D4A2EB144"/>
+</associations>
+</Column>
+<Column name="date_completed" id="A7C04347-A234-3BD4-29F6-B0254DEFD9A4">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>date_completed: when a nurse finishes an allocaiton with a particular ward</commentInRDBMS>
+<generatorID>A573642D-2896-4FC8-35F7-97D9AA375138</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ward_code" id="707A5A90-4351-396E-D4F5-A3DA3344219F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>5AFF4C6C-DDC4-3086-2699-D6860EA2331C</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92B73497-E1FE-2624-8A08-BF0795727DA7" referredColumn="D1CB729D-6B5B-4DFA-2600-BD7A3019C9FA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D78D46B9-BA88-850F-A486-BA510EF63C7A" name="WARDASSGNMENT_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>5BD7A251-3E15-CC07-CDAA-0AC0D13D2A58</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91FE58F0-0612-AFFD-870C-21F2C34C70A5"/>
+<colUsage columnID="F7184D4B-15EA-E8C7-BEEB-1774B0897712"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="823C8A17-2FBE-4FAF-4EAB-65B0C15B94C5" name="nurse_w_assignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>5D69E3A4-D5FB-3D53-CB38-FCD866B5A7EC</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7184D4B-15EA-E8C7-BEEB-1774B0897712"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ABAD8EE-AE66-E8CE-231A-71681C9038E6" name="ward_w_assignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>4A9EB173-1A13-9533-C4A2-EB2C2DA44620</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="707A5A90-4351-396E-D4F5-A3DA3344219F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

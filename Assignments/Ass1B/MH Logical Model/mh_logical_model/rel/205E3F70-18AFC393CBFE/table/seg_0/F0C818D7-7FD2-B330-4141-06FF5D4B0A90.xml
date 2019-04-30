@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0C818D7-7FD2-B330-4141-06FF5D4B0A90" name="DOC_SPEC">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>BD3463AA-35C5-84C5-8CCF-6DBC9A0C86EB</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doctor_id" id="236E34A8-3B17-AA68-A28B-7E894A4FB226">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>doctor_id: doctor id</commentInRDBMS>
+<generatorID>BE533575-5F10-EFBB-BB45-3E3FE9575890</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+<associations>
+<colAssociation fkAssociation="2F08C7F9-F7C9-28D1-B581-FA4DD401C284" referredColumn="CE585250-5415-6075-E7CF-7CE0B59E4C8E"/>
+</associations>
+</Column>
+<Column name="specialisation_id" id="A181D8AB-6F83-BE43-F500-7454DFF63472">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<commentInRDBMS>specialisation_id: doctor specialisation id</commentInRDBMS>
+<generatorID>614C1745-F53E-5597-1532-C7A710B39AD1</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6777737-E843-7FEE-127D-8186A4433E87" referredColumn="B9F2A6A1-E1A1-76FC-6CF1-01E4AF202F28"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB3F276D-5CD7-9C94-FA3A-8EE12FCED88C" name="DOC-SPEC_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>8ECEBACF-74E9-0B4E-DC01-55879413D84C</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236E34A8-3B17-AA68-A28B-7E894A4FB226"/>
+<colUsage columnID="A181D8AB-6F83-BE43-F500-7454DFF63472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80505AA6-610A-9CD2-C52C-030E65C8D72F" name="doctor_doc_spec">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>90555FA4-46BE-F1F3-7AE4-B78787AE0FE1</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236E34A8-3B17-AA68-A28B-7E894A4FB226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54C66413-87D0-34B7-6D36-969D10735ACD" name="specialisation_doctor_spec">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 15:05:22 UTC</createdTime>
+<generatorID>ECC41746-2BA6-5C03-E5D8-FCAF299BA750</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A181D8AB-6F83-BE43-F500-7454DFF63472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

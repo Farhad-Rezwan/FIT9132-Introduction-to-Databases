@@ -3,6 +3,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:36:42 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -17,6 +20,9 @@
 <createdTime>2019-04-24 19:36:59 UTC</createdTime>
 <commentInRDBMS>ward_code: ward code</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -28,6 +34,9 @@
 <createdTime>2019-04-24 19:38:24 UTC</createdTime>
 <commentInRDBMS>ward_name: name of the ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -39,6 +48,9 @@
 <createdTime>2019-04-24 19:39:09 UTC</createdTime>
 <commentInRDBMS>total_beds: total number of beds in each ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -50,6 +62,9 @@
 <createdTime>2019-04-24 19:40:43 UTC</createdTime>
 <commentInRDBMS>beds_available: number of currently available beds</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -62,6 +77,10 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:37:43 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B8CDC607-132F-40FE-21EA-447DF1CCD211</attributeRef>

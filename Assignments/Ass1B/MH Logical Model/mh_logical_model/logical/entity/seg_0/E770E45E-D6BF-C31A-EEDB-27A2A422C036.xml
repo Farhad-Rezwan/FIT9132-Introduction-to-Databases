@@ -4,7 +4,7 @@
 <createdTime>2019-04-29 12:45:36 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,14 +22,14 @@
 <generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>D1C6B78A-FE86-952F-E7F3-B8E6ED8B26C3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="carried_out_on" id="75C70B84-AE1C-C9B3-D21B-61A423A78848">
 <createdBy>farhadullahrezwan</createdBy>
@@ -38,7 +38,7 @@
 <generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>BC91F747-807F-E32E-91E8-9AF1F7B11518</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,14 +53,14 @@
 <generatorID>91E410EA-C987-003C-175D-40FD7D6A0DB7</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -68,8 +68,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-29 13:21:23 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

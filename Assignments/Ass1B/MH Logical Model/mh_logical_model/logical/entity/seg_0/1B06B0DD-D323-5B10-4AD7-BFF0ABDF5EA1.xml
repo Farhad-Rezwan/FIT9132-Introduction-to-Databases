@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:54:18 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,13 +29,29 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ward_code" id="2AD3444B-E817-60B1-CF67-A19EF33E1703">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-29 14:44:44 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<engineerTo>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
+</engineerTo>
+<referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="bed_phone_no" id="23816EFF-046E-CDC3-9C8A-E7AE4E6F0F55">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:59:10 UTC</createdTime>
 <commentInRDBMS>bed_phone_no: bedside telephone number</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -50,7 +66,7 @@
 <commentInRDBMS>bed_type: beds are classified as either fixed or adjustable</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <constraintName>chk_bedtype</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,30 +79,15 @@
 </listOfValues>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ward_code" id="2AD3444B-E817-60B1-CF67-A19EF33E1703">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-29 14:44:44 UTC</createdTime>
-<commentInRDBMS>ward_code: ward code</commentInRDBMS>
-<generatorID>A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
-</engineerTo>
-<referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0FD568B4-1906-E733-FB35-9D3827E88FDA" name="BED PK">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 19:57:49 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

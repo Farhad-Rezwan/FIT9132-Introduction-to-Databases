@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 20:43:33 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>carried_out_on: procedure carried out on</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,14 +35,14 @@
 <generatorID>C700E7B0-0441-07F8-566B-B8C79FA453A0</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>3432D424-A9B2-AEB9-2F72-852F8FECEE83</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="procedure_charge" id="C8D1EB47-14FA-A211-DB6B-3EA7CEE181AC">
 <createdBy>farhadullahrezwan</createdBy>
@@ -50,7 +50,7 @@
 <commentInRDBMS>procedure_charge: procedure charge to patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <constraintName>prochrg_chk</constraintName>
 <nullsAllowed>true</nullsAllowed>
@@ -70,7 +70,7 @@
 <commentInRDBMS>totalextras_charges: total extras charges to patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <constraintName>texcharge_chk</constraintName>
 <nullsAllowed>true</nullsAllowed>
@@ -91,7 +91,7 @@
 <generatorID>8B984EC4-FA8A-5164-EB9F-B6A08A8F6BE0</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
@@ -99,7 +99,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="doccarried_id" id="E7D2985C-EF2D-D5A2-A85A-DA325047CBBE">
 <createdBy>farhadullahrezwan</createdBy>
@@ -108,7 +108,7 @@
 <generatorID>EC2AC6AB-001A-9A9B-ABEC-CA11304E78D8</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
@@ -116,7 +116,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="procedure_code" id="EC2A64D1-2AFD-B9D5-E70E-99529BDBF6E2">
 <createdBy>farhadullahrezwan</createdBy>
@@ -125,14 +125,14 @@
 <generatorID>3ECFB8FA-0295-D1DB-4A5B-741BE5BB7800</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -140,8 +140,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:45:54 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

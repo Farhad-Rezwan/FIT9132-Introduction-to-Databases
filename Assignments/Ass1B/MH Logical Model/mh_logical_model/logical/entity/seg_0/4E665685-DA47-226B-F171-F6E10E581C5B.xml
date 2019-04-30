@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 20:35:07 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,14 +22,14 @@
 <generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>3432D424-A9B2-AEB9-2F72-852F8FECEE83</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>6</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="bed_number" id="59D1A78F-38B3-DDB0-97DA-D89E8F677A9D">
 <createdBy>farhadullahrezwan</createdBy>
@@ -38,14 +38,14 @@
 <generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>38032291-C86A-22E2-72DA-482EC2217417</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ward_code" id="E48832B2-BF06-B831-5936-4DC8CB618092">
 <createdBy>farhadullahrezwan</createdBy>
@@ -54,14 +54,14 @@
 <generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>2AD3444B-E817-60B1-CF67-A19EF33E1703</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -69,8 +69,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:36:27 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

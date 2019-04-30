@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 18:41:42 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -29,16 +29,14 @@
 <dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="discharge_datetime" id="4D2D32C0-DADD-2C30-4AF1-B96EC4834C38">
+<Attribute name="adm_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:43:35 UTC</createdTime>
-<comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
-<commentInRDBMS>discharge_datetime: date and time of discharge of a patient</commentInRDBMS>
+<createdTime>2019-04-24 18:42:31 UTC</createdTime>
+<commentInRDBMS>adm_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
@@ -51,7 +49,7 @@
 <generatorID>4AE50C29-F2E0-96C6-0C42-F161697D7859</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,14 +58,16 @@
 <dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="adm_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
+<Attribute name="discharge_datetime" id="4D2D32C0-DADD-2C30-4AF1-B96EC4834C38">
 <createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-24 18:42:31 UTC</createdTime>
-<commentInRDBMS>adm_datetime: admission date and time of a particular p atient</commentInRDBMS>
+<createdTime>2019-04-24 18:43:35 UTC</createdTime>
+<comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
+<commentInRDBMS>discharge_datetime: date and time of discharge of a patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>
@@ -80,14 +80,14 @@
 <generatorID>2CD08A30-1039-E89D-BCD8-7F58AD330EA3</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="true"/>
 </engineerTo>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -95,8 +95,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:49:28 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -107,8 +108,9 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-29 13:01:36 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
+<item key="205E3F70-B5CF-3A62-C1D7-18AFC393CBFE" value="false"/>
 </engineerTo>
 <newElementsIDs>4AE50C29-F2E0-96C6-0C42-F161697D7859,F8A60C1D-F172-BC01-1833-B7927ECE1310</newElementsIDs>
 <usedAttributes>
