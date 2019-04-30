@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5D66FAF-4DB6-EBAF-DB41-32A1C6C21C2B" name="WARD">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>2D10046B-9C3A-D609-0A74-DEF3A115787D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ward_code" id="DAECAA57-477D-D536-885C-C13C16946A0F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>B8CDC607-132F-40FE-21EA-447DF1CCD211</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ward_name" id="6325542A-F16E-D2D0-7B4C-CCBB99A684E9">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<commentInRDBMS>ward_name: name of the ward</commentInRDBMS>
+<generatorID>BBE86FD9-89C4-C731-0568-814A3D5CF858</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_beds" id="E4C68626-7CE5-F03A-06C9-37276BA878F6">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<commentInRDBMS>total_beds: total number of beds in each ward</commentInRDBMS>
+<generatorID>39E7990D-BA48-1DC7-24A2-BF19448E2812</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="beds_available" id="CB3ACCF9-B9E9-87ED-DFA8-81AB1B653FFB">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<commentInRDBMS>beds_available: number of currently available beds</commentInRDBMS>
+<generatorID>1FA6F492-D2A3-D9F7-1486-0765E280E000</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85600144-D915-1DDD-2762-9BAC34490CB0" name="WARD_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>10CB909E-1146-94D1-3EAE-9DF7AB7F6631</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAECAA57-477D-D536-885C-C13C16946A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

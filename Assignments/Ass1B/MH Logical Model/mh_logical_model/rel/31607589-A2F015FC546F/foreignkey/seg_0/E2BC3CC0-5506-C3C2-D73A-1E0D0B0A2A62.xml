@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E2BC3CC0-5506-C3C2-D73A-1E0D0B0A2A62" containerWithKeyObject="5FAAE2E4-C728-166E-E1C5-46E6093D0D87" localFKIndex="1A595158-AA39-C9AA-EB6B-6684F4DEDE96" name="pat_procedure_pat_eitem">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>8C267D1E-330F-C7D1-F6E1-0A75F2136DF5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referredTableLongName>PAT_PROCEDURE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>64F71207-D2A9-5E16-5C14-340D5D580368</referredTableID>
+<keyObject>3019D960-8832-7FAC-40CA-5003894939E3</keyObject>
+<referredKeyID>3019D960-8832-7FAC-40CA-5003894939E3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>adm_number,carried_out_on</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

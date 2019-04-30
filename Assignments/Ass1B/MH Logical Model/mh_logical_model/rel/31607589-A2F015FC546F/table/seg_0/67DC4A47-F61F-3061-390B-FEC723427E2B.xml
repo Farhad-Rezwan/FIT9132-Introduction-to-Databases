@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67DC4A47-F61F-3061-390B-FEC723427E2B" name="BED">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>1B06B0DD-D323-5B10-4AD7-BFF0ABDF5EA1</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bed_number" id="19ECAF39-9F48-E7F5-6532-734EB55020E4">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
+<generatorID>38032291-C86A-22E2-72DA-482EC2217417</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bed_phone_no" id="C4B8A79F-EDA5-44AB-4812-A7FDCF23BD95">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>bed_phone_no: bedside telephone number</commentInRDBMS>
+<generatorID>23816EFF-046E-CDC3-9C8A-E7AE4E6F0F55</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bed_type" id="D4DE10A5-571E-C446-F19D-90CD2EC9D4E0">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>bed_type: beds are classified as either fixed or adjustable</commentInRDBMS>
+<generatorID>F204296D-7C1D-B414-43CB-52DB5109D141</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<constraintName>chk_bedtype</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="adjustable" description="bed type is adjustable"/>
+<valueDef value="fixed" description="bed type is fixed"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ward_code" id="BBE77437-DDCE-D86B-26F2-00AAC477E67C">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>2AD3444B-E817-60B1-CF67-A19EF33E1703</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF9E3409-27AD-B469-40C9-92270B48A29B" referredColumn="DAECAA57-477D-D536-885C-C13C16946A0F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80E8A510-490D-99E1-F1DE-3C5C00E2CB4F" name="BED_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>0FD568B4-1906-E733-FB35-9D3827E88FDA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19ECAF39-9F48-E7F5-6532-734EB55020E4"/>
+<colUsage columnID="BBE77437-DDCE-D86B-26F2-00AAC477E67C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A61A7A29-5653-CEA9-F0D8-05B5228076B6" name="ward_bed">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBE77437-DDCE-D86B-26F2-00AAC477E67C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

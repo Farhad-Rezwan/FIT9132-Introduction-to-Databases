@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_doc-spec" directorySegmentName="seg_0" id="90555FA4-46BE-F1F3-7AE4-B78787AE0FE1">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="doctor_doc_spec" directorySegmentName="seg_0" id="90555FA4-46BE-F1F3-7AE4-B78787AE0FE1">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-29 13:58:44 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <sourcePk>5CE899FA-7D04-6F64-2120-E33BDDBE281F</sourcePk>
 <identifying>true</identifying>

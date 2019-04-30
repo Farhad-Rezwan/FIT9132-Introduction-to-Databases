@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 19:54:18 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <commentInRDBMS>bed_phone_no: bedside telephone number</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -50,7 +50,7 @@
 <commentInRDBMS>bed_type: beds are classified as either fixed or adjustable</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <constraintName>chk_bedtype</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -70,7 +70,7 @@
 <generatorID>A75CD2C6-A425-FB8E-F9C1-0E20F6EA0FAA</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>B8CDC607-132F-40FE-21EA-447DF1CCD211</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -86,7 +86,7 @@
 <createdTime>2019-04-24 19:57:49 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

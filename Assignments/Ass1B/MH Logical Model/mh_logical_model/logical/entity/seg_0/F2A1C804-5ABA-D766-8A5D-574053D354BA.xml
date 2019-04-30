@@ -4,7 +4,7 @@
 <createdTime>2019-04-24 21:27:49 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <commentInRDBMS>procedure_name: name of the procedure</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -43,13 +43,13 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="procedure_description" id="ABCB8616-8FCF-FB31-16B0-5C40CE2B8114">
+<Attribute name="procedure_desc" id="ABCB8616-8FCF-FB31-16B0-5C40CE2B8114">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:30:09 UTC</createdTime>
-<commentInRDBMS>procedure_description: procedure description of each procedure</commentInRDBMS>
+<commentInRDBMS>procedure_desc: procedure description of each procedure</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -63,7 +63,7 @@
 <commentInRDBMS>proc_time_req: time required for each procedure</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -76,13 +76,17 @@
 <commentInRDBMS>current_cost: current cost of each procedure</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
+<constraintName>ccost_chk</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="current_cost &gt; 0"/>
+</checkConstraint>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -92,7 +96,7 @@
 <createdTime>2019-04-24 21:29:06 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73832CBE-C281-F49B-FBF9-48F1DD2489AF" name="PROCEDURE">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>F2A1C804-5ABA-D766-8A5D-574053D354BA</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="procedure_code" id="23E45B46-09B0-CBC3-C5F8-EFDBFDD364BB">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>procedure_code: procedure code</commentInRDBMS>
+<generatorID>30C9250E-CBF8-E8F6-34CE-A6B20A5EC6CF</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procedure_name" id="19FB9D10-2794-C050-F996-F3257CD8419F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>procedure_name: name of the procedure</commentInRDBMS>
+<generatorID>430CC88D-39D8-6036-4B74-6E736E21AB3A</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procedure_desc" id="EF7430C2-D67A-9FB5-BF66-2CA2F771B6D0">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>procedure_desc: procedure description of each procedure</commentInRDBMS>
+<generatorID>ABCB8616-8FCF-FB31-16B0-5C40CE2B8114</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proc_time_req" id="8C9AAA14-6400-FD6B-87B2-AA8827AE612E">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>proc_time_req: time required for each procedure</commentInRDBMS>
+<generatorID>1044BEBD-65FE-77EF-D989-4E9CA045D2A6</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="current_cost" id="1481ED18-A067-E071-55E2-7A12082E0A76">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>current_cost: current cost of each procedure</commentInRDBMS>
+<generatorID>A3D7286F-6427-6B72-68F9-327ADA9E1071</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<constraintName>ccost_chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="current_cost &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03719DA6-0CC4-67D4-52D5-711765D5F95E" name="PROCEDURE_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>113CA80B-287E-9013-A339-28B433534E3F</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23E45B46-09B0-CBC3-C5F8-EFDBFDD364BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

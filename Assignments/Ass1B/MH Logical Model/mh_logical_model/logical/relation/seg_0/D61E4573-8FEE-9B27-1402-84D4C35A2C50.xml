@@ -1,11 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bed_b-assignment" directorySegmentName="seg_0" id="D61E4573-8FEE-9B27-1402-84D4C35A2C50">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bed_b_assignment" directorySegmentName="seg_0" id="D61E4573-8FEE-9B27-1402-84D4C35A2C50">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-29 14:40:35 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <sourcePk>0FD568B4-1906-E733-FB35-9D3827E88FDA</sourcePk>
 <identifying>true</identifying>
 <nameOnSource>holds</nameOnSource>

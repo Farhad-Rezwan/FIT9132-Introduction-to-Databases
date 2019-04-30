@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC04F0BB-FCEA-707F-3C9C-422528C6E671" name="E_ITEM">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>F235C7E0-20E1-387F-FB56-CE022CB9BBD0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="item_code" id="7589C5DF-C8BD-E8B2-0692-4373FFAD8B66">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>item_code: item code for each extra item</commentInRDBMS>
+<generatorID>4BEE00D0-F7AE-F857-11FC-C906BF530AE9</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_description" id="156E64D5-2FFC-A5B0-ABD9-CFB658BF2A47">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>item_description: description of each extra item</commentInRDBMS>
+<generatorID>5F29AA7B-5115-EBE3-528C-67BFF3C2C17E</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_price" id="89B34CF7-8E07-8692-EC68-DF71D422D28B">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>item_price: price of each extra item</commentInRDBMS>
+<generatorID>192BD878-9F1A-FAD4-9346-E0CF592E09D0</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<constraintName>itmprice_chk</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="item_price &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_cstock" id="8E1FC61E-958B-E170-0E15-0F77E736A7F3">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>item_cstock: current stock of each item</commentInRDBMS>
+<generatorID>8D3F68FA-4341-31B2-7298-481A6DA776EF</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_code" id="CE5E78C7-0C79-24BE-D0C1-7FA6AFC29FDA">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>centre_code: cost centre code</commentInRDBMS>
+<generatorID>814CD478-BDD1-978E-B9D3-530E87C359D5</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73746543-2458-0659-DC98-6BB4AF362466" referredColumn="61EE0EAB-4313-57D9-ABF3-19DFEFDC9BA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3491D6E4-29B6-54AF-4D4E-7860A9E90B93" name="EXTRA_ITEM_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>A1C3EE90-62CC-79A5-9A6D-989B11F9649A</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7589C5DF-C8BD-E8B2-0692-4373FFAD8B66"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C10FA1D-E947-F693-1DDB-F0D66AE0E455" name="cost_centre_eitem">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>05C21D6D-2784-B9B9-1990-6E2AAD3694E3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE5E78C7-0C79-24BE-D0C1-7FA6AFC29FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="73746543-2458-0659-DC98-6BB4AF362466" containerWithKeyObject="DC04F0BB-FCEA-707F-3C9C-422528C6E671" localFKIndex="6C10FA1D-E947-F693-1DDB-F0D66AE0E455" name="cost_centre_eitem">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>05C21D6D-2784-B9B9-1990-6E2AAD3694E3</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<referredTableLongName>COST_CENTRE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>466BC56A-4A4D-1CDB-92C2-8D551A5004CB</referredTableID>
+<keyObject>B7581594-A42E-E403-A5B4-153C4FC95204</keyObject>
+<referredKeyID>B7581594-A42E-E403-A5B4-153C4FC95204</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>centre_code</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

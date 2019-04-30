@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D9B5AF8-3563-0AF9-2F74-8E9B26C4220D" name="COST-CENTRE">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D9B5AF8-3563-0AF9-2F74-8E9B26C4220D" name="COST_CENTRE">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 21:21:31 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>centre_code: cost centre code</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <commentInRDBMS>centre_title: cost centre title</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -49,7 +49,7 @@
 <commentInRDBMS>manager_name: manager name</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -64,7 +64,7 @@
 <createdTime>2019-04-24 21:23:22 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0" name="PAT-ADMISSION">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D0D1E7EA-0F6F-FCC7-A618-23849F4BC0A0" name="PAT_ADMISSION">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:41:42 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,9 +33,10 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:43:35 UTC</createdTime>
 <comment>discharge_datetime: date and time of discharge of a particular patient&apos;s admission</comment>
+<commentInRDBMS>discharge_datetime: date and time of discharge of a patient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -50,7 +51,7 @@
 <generatorID>4AE50C29-F2E0-96C6-0C42-F161697D7859</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -62,10 +63,10 @@
 <Attribute name="adm_datetime" id="F8A60C1D-F172-BC01-1833-B7927ECE1310">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:42:31 UTC</createdTime>
-<commentInRDBMS>admission_datetime: admission date and time of a particular p atient</commentInRDBMS>
+<commentInRDBMS>adm_datetime: admission date and time of a particular p atient</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,7 +80,7 @@
 <generatorID>2CD08A30-1039-E89D-BCD8-7F58AD330EA3</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>E4FE1F73-41C5-75F7-4296-DF68591F3E32</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -95,11 +96,10 @@
 <createdTime>2019-04-24 18:49:28 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BD84015E-A289-D015-1B62-2A951311A265</attributeRef>
 <attributeRef>3432D424-A9B2-AEB9-2F72-852F8FECEE83</attributeRef>
 </usedAttributes>
 </identifier>
@@ -108,7 +108,7 @@
 <createdTime>2019-04-29 13:01:36 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <newElementsIDs>4AE50C29-F2E0-96C6-0C42-F161697D7859,F8A60C1D-F172-BC01-1833-B7927ECE1310</newElementsIDs>
 <usedAttributes>

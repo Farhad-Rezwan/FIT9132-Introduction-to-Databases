@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4AA5EAE-2243-9711-8A35-646A60DF0DBA" name="B_ASSIGNMENT">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>4E665685-DA47-226B-F171-F6E10E581C5B</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="adm_number" id="A7B0E74F-FBE0-A7DD-2AB8-FFA8B732325F">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>adm_number: surrogate key added to entity</commentInRDBMS>
+<generatorID>0E1FCE4A-2177-87CE-E75B-321A1A941E94</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="63FB5397-E822-6A08-4BED-DB9C7B108D38" referredColumn="3109BDF4-A858-8742-E4CF-CC7058FA5FCD"/>
+</associations>
+</Column>
+<Column name="bed_number" id="898DA5F6-2228-B1C3-4307-F5CE1843C164">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>bed_number: bed number within a particular ward</commentInRDBMS>
+<generatorID>59D1A78F-38B3-DDB0-97DA-D89E8F677A9D</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4268784-5CB6-AAE8-848C-CD389A3FD501" referredColumn="19ECAF39-9F48-E7F5-6532-734EB55020E4"/>
+</associations>
+</Column>
+<Column name="ward_code" id="CA0B6438-5A39-E6B9-756F-D56B63C930C3">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<commentInRDBMS>ward_code: ward code</commentInRDBMS>
+<generatorID>E48832B2-BF06-B831-5936-4DC8CB618092</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4268784-5CB6-AAE8-848C-CD389A3FD501" referredColumn="BBE77437-DDCE-D86B-26F2-00AAC477E67C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0604C3A-81AE-BDDD-F597-43E8756F4A8E" name="BEDASSIGNMENT_PK">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:11 UTC</createdTime>
+<generatorID>305D8F78-D954-D48C-5258-60A7649254A7</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B0E74F-FBE0-A7DD-2AB8-FFA8B732325F"/>
+<colUsage columnID="898DA5F6-2228-B1C3-4307-F5CE1843C164"/>
+<colUsage columnID="CA0B6438-5A39-E6B9-756F-D56B63C930C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48ED2C71-9836-D875-B4F0-FD2E7C1B426C" name="bed_b_assignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="898DA5F6-2228-B1C3-4307-F5CE1843C164"/>
+<colUsage columnID="CA0B6438-5A39-E6B9-756F-D56B63C930C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E67D9AB-7D2D-9F3C-0A04-2FBB09E0873B" name="pat_admission_b_assignment">
+<createdBy>farhadullahrezwan</createdBy>
+<createdTime>2019-04-30 14:42:12 UTC</createdTime>
+<generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
+<ownerDesignName>mh_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B0E74F-FBE0-A7DD-2AB8-FFA8B732325F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

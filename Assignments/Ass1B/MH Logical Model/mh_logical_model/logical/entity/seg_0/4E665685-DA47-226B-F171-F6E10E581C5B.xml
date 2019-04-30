@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E665685-DA47-226B-F171-F6E10E581C5B" name="B-ASSIGNMENT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E665685-DA47-226B-F171-F6E10E581C5B" name="B_ASSIGNMENT">
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 20:35:07 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,7 +22,7 @@
 <generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>3432D424-A9B2-AEB9-2F72-852F8FECEE83</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -38,7 +38,7 @@
 <generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>38032291-C86A-22E2-72DA-482EC2217417</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -54,29 +54,13 @@
 <generatorID>D61E4573-8FEE-9B27-1402-84D4C35A2C50</generatorID>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <referedAttribute>2AD3444B-E817-60B1-CF67-A19EF33E1703</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="patient_id" id="F442C8FD-0FD0-62F1-BB8C-4184FB1893DC">
-<createdBy>farhadullahrezwan</createdBy>
-<createdTime>2019-04-29 14:50:14 UTC</createdTime>
-<commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
-<generatorID>75D5BCC4-DA47-15C9-0B0E-FC4B13701B96</generatorID>
-<ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
-<referedAttribute>BD84015E-A289-D015-1B62-2A951311A265</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -86,11 +70,10 @@
 <createdTime>2019-04-24 20:36:27 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
 <engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
+<item key="FAF59E4B-45B9-0288-E8D5-08CDFE1B6F21" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>F442C8FD-0FD0-62F1-BB8C-4184FB1893DC</attributeRef>
 <attributeRef>0E1FCE4A-2177-87CE-E75B-321A1A941E94</attributeRef>
 <attributeRef>59D1A78F-38B3-DDB0-97DA-D89E8F677A9D</attributeRef>
 <attributeRef>E48832B2-BF06-B831-5936-4DC8CB618092</attributeRef>

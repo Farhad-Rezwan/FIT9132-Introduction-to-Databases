@@ -3,9 +3,6 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:26:18 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -20,9 +17,6 @@
 <createdTime>2019-04-24 18:26:34 UTC</createdTime>
 <commentInRDBMS>patient_id: unique patient id</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -34,9 +28,6 @@
 <createdTime>2019-04-24 18:29:21 UTC</createdTime>
 <commentInRDBMS>patient_fname: patient first name</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,9 +39,6 @@
 <createdTime>2019-04-24 18:31:06 UTC</createdTime>
 <commentInRDBMS>patient_lname: patient last name</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -62,9 +50,6 @@
 <createdTime>2019-04-24 18:31:47 UTC</createdTime>
 <commentInRDBMS>patient_address: patient address</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -76,9 +61,6 @@
 <createdTime>2019-04-24 18:33:00 UTC</createdTime>
 <commentInRDBMS>patient_dob: patient date of birth</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -89,9 +71,6 @@
 <createdTime>2019-04-24 18:33:42 UTC</createdTime>
 <commentInRDBMS>patient_enumber: patient emergency contact number</commentInRDBMS>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -104,9 +83,6 @@
 <createdBy>farhadullahrezwan</createdBy>
 <createdTime>2019-04-24 18:28:28 UTC</createdTime>
 <ownerDesignName>mh_logical_model</ownerDesignName>
-<engineerTo>
-<item key="775AD4DE-3AA8-71A3-0C28-9F5E2F8CCE18" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D092ED9C-2EF6-802F-4FA1-9EE5222347A0</attributeRef>
