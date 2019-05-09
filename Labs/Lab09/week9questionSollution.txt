@@ -1,0 +1,37 @@
+SQL> -- FIT9132 week9 table quiestions
+SQL> -- Farhad Ullah Rezwan
+SQL> -- 
+SQL> --1. Update the unit name of FIT9999 from 'FIT Last Unit' to 'place holder unit'.
+SQL> select * from unit;
+
+UNIT_CO UNIT_NAME                                          CREDIT_POINTS
+------- -------------------------------------------------- -------------
+FIT5132 Introduction to Databases                                      6
+FIT5016 Project                                                        6
+FIT5111 Student's Life                                                 6
+FIT9999 place holder unit                                              6
+FIT9111 Unit FIT9111                                                  12
+
+SQL> update unit set unit_name = 'place holder unit'
+  2  where unit_code = 'FIT9999';
+
+1 row updated.
+
+SQL> 
+SQL> -- 2. 
+SQL> select * from enrollment
+  2  
+  3  set echo off
+  4  spool off
+
+Error starting at line : 12 in command -
+select * from enrollment
+
+set echo off
+spool off
+Error at Command Line : 14 Column : 1
+Error report -
+SQL Error: ORA-00933: SQL command not properly ended
+00933. 00000 -  "SQL command not properly ended"
+*Cause:    
+*Action:
