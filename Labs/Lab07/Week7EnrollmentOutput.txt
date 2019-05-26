@@ -1,0 +1,259 @@
+SQL> --student id
+SQL> --student name
+SQL> --week 7 tutorial practice // it will be assignment 1 part b// after i generate dbl wee need to do set echo on and spool in the beg, add drop table and drop table as well
+SQL> 
+SQL> 
+SQL> 
+SQL> drop table enrollment purge;
+
+Error starting at line : 10 in command -
+drop table enrollment purge
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> drop table student purge;
+
+Error starting at line : 11 in command -
+drop table student purge
+Error report -
+ORA-02449: unique/primary keys in table referenced by foreign keys
+02449. 00000 -  "unique/primary keys in table referenced by foreign keys"
+*Cause:    An attempt was made to drop a table with unique or
+           primary keys referenced by foreign keys in another table.
+*Action:   Before performing the above operations the table, drop the
+           foreign key constraints in other tables. You can see what
+           constraints are referencing a table by issuing the following
+           command:
+           SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = "tabnam";
+SQL> drop table unit purge;
+
+Error starting at line : 12 in command -
+drop table unit purge
+Error report -
+ORA-02449: unique/primary keys in table referenced by foreign keys
+02449. 00000 -  "unique/primary keys in table referenced by foreign keys"
+*Cause:    An attempt was made to drop a table with unique or
+           primary keys referenced by foreign keys in another table.
+*Action:   Before performing the above operations the table, drop the
+           foreign key constraints in other tables. You can see what
+           constraints are referencing a table by issuing the following
+           command:
+           SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME = "tabnam";
+SQL> 
+SQL> 
+SQL> create table unit 
+  2  (
+  3  unit_code char (7) not null;
+
+Error starting at line : 15 in command -
+create table unit 
+(
+unit_code char (7) not null
+Error report -
+ORA-00907: missing right parenthesis
+00907. 00000 -  "missing right parenthesis"
+*Cause:    
+*Action:
+SQL> unit_name varchar(50) not null;
+
+Error starting at line : 18 in command -
+unit_name varchar(50) not null
+Error report -
+Unknown Command
+
+SQL> 
+SQL> );
+
+Error starting at line : 20 in command -
+)
+Error report -
+Unknown Command
+
+SQL> 
+SQL> 
+SQL> 
+SQL> alter table unit add constraints pk_unit primary key (unit_code);
+
+Error starting at line : 24 in command -
+alter table unit add constraints pk_unit primary key (unit_code)
+Error report -
+ORA-02260: table can have only one primary key
+02260. 00000 -  "table can have only one primary key"
+*Cause:    Self-evident.
+*Action:   Remove the extra primary key.
+SQL> alter table unit add constraints  unit_name unique (unit_name);
+
+Table UNIT altered.
+
+SQL> 
+SQL> create table student;
+
+Error starting at line : 27 in command -
+create table student
+Error report -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+SQL> (
+  2  stu_nbr number (8) not null;
+
+Error starting at line : 28 in command -
+(
+stu_nbr number (8) not null
+Error at Command Line : 29 Column : 1
+Error report -
+SQL Error: ORA-00928: missing SELECT keyword
+00928. 00000 -  "missing SELECT keyword"
+*Cause:    
+*Action:
+SQL> stu_lname varchar (50) not null;
+
+Error starting at line : 30 in command -
+stu_lname varchar (50) not null
+Error report -
+Unknown Command
+
+SQL> stu_fname varchar (50) not null;
+
+Error starting at line : 31 in command -
+stu_fname varchar (50) not null
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+SQL> stu_dob date not null;
+
+Error starting at line : 32 in command -
+stu_dob date not null
+Error report -
+Unknown Command
+
+SQL> );
+
+Error starting at line : 33 in command -
+)
+Error report -
+Unknown Command
+
+SQL> 
+SQL> alter table student add constraint pk_student primary key (stu_nmr);
+
+Error starting at line : 35 in command -
+alter table student add constraint pk_student primary key (stu_nmr)
+Error report -
+ORA-00904: "STU_NMR": invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+SQL> alter table student add constraint ck_stu_nbr > 1000000;
+
+Error starting at line : 36 in command -
+alter table student add constraint ck_stu_nbr > 1000000
+Error report -
+ORA-00904: : invalid identifier
+00904. 00000 -  "%s: invalid identifier"
+*Cause:    
+*Action:
+SQL> 
+SQL> create table enrollment;
+
+Error starting at line : 38 in command -
+create table enrollment
+Error report -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+SQL> (
+  2  stu_nbr number (8) not null;
+
+Error starting at line : 39 in command -
+(
+stu_nbr number (8) not null
+Error at Command Line : 40 Column : 1
+Error report -
+SQL Error: ORA-00928: missing SELECT keyword
+00928. 00000 -  "missing SELECT keyword"
+*Cause:    
+*Action:
+SQL> unit_code char (7) not null;
+
+Error starting at line : 41 in command -
+unit_code char (7) not null
+Error report -
+Unknown Command
+
+SQL> enroll_year number (4) not null;
+
+Error starting at line : 42 in command -
+enroll_year number (4) not null
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+SQL> enroll_semester char (1) not null;
+
+Error starting at line : 43 in command -
+enroll_semester char (1) not null
+Error report -
+Unknown Command
+
+SQL> enroll_mark number (3);
+
+Error starting at line : 44 in command -
+enroll_mark number (3)
+Error report -
+Unknown Command
+
+SQL> enroll_grade char (2);
+
+Error starting at line : 45 in command -
+enroll_grade char (2)
+Error report -
+Unknown Command
+
+SQL> 
+SQL> );
+
+Error starting at line : 47 in command -
+)
+Error report -
+Unknown Command
+
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+SQL> 
+SQL> alter table enrollment add constraints pk_enrollment
+  2      primary key (stu_nbr, unit_code, enroll_year, enroll_semester);
+
+Error starting at line : 49 in command -
+alter table enrollment add constraints pk_enrollment
+    primary key (stu_nbr, unit_code, enroll_year, enroll_semester)
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> alter table enrollment add constraints pk_sem_chk
+  2      check (status in ('1', '2', '3');
+
+Error starting at line : 51 in command -
+alter table enrollment add constraints pk_sem_chk
+    check (status in ('1', '2', '3')
+Error report -
+ORA-00907: missing right parenthesis
+00907. 00000 -  "missing right parenthesis"
+*Cause:    
+*Action:
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> set echo off

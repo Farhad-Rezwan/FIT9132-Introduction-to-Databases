@@ -11,7 +11,6 @@ create table agent
     agent_ytd_sls  number (8,2) not null
 );
 
-
 alter table agent add constraint agent_pk primary key
    ( agent_code ) ;
 

@@ -83,3 +83,33 @@ WHERE
 ORDER BY
     studlname,
     studfname;
+    
+    
+    
+    
+    
+    
+-- practice again---1
+select distinct unitcode from uni.schedclass where cltype = 'L' and clday = 'Mon';
+--2
+select to_char(studdob, 'dd-MON-yyyy') from uni.student;
+--3
+select studfname || ' ' || studlname As name , to_char(studdob, 'dd-MON-YYYY') from uni.student ;
+--4
+select s.studfname, s.studlname from uni.student s JOIN uni.enrolment e ON s.studid = e.studid where e.grade = 'HD' and e.unitcode = 'FIT1004';
+--5
+select * from ((uni.student s JOIN uni.enrolment e ON s.studid = e.studid) join uni.unit u on e.unitcode = u.unitcode) where e.grade = 'HD' and u.unitname like '%Data%';
+--6
+select Distinct u.unitname from uni.unit u join uni.schedclass s on u.unitcode = s.unitcode where clday = 'Mon';
+--7
+select distinct studfname, studlname
+from ((uni.student s join uni.enrolment e on s.studid = e.studid)
+   join uni.schedclass c on e.unitcode = c.unitcode and e.semester = c.semester and e.ofyear = c.ofyear)
+where cltype = 'L'
+and clday ='Mon'
+order by studlname, studfname;
+
+
+
+--7
+select s.studfname || '' || s.studlname As "Student Name" from ((uni.student s JOIN uni.enrolment e on s.studid = e.studid)join uni.schedclass s on e.unitcode = s.unitcode and e.semester = s.semester and e.ofyear = s.ofyear);

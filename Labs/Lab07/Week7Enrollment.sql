@@ -14,44 +14,43 @@ drop table unit purge;
 
 create table unit 
 (
-unit_code char (7) not null;
-unit_name varchar(50) not null;
-
-);
+unit_code char (7) not null,
+unit_name varchar(50) not null);
 
 
 
 alter table unit add constraints pk_unit primary key (unit_code);
 alter table unit add constraints  unit_name unique (unit_name);
 
-create table student;
+create table student
 (
-stu_nbr number (8) not null;
-stu_lname varchar (50) not null;
-stu_fname varchar (50) not null;
-stu_dob date not null;
+stu_nbr number (8) not null,
+stu_lname varchar (50) not null,
+stu_fname varchar (50) not null,
+stu_dob date not null
 );
 
-altertable student add constraint pk_student primary key (stu_nmr);
-alter table student add constraint ck_stu_nbr > 1000000;
+alter table student add constraint pk_student primary key (stu_nbr);
+alter table student add constraint ck_stu_nbr check (stu_nbr > 1000000);
 
-create table enrollment;
+create table enrollment
 (
-stu_nbr number (8) not null;
-unit_code char (7) not null;
-enroll_year number (4) not null;
-enroll_semester char (1) not null;
-enroll_mark number (3);
-enroll_grade char (2);
-
+stu_nbr number (8) not null,
+unit_code char (7) not null,
+enroll_year number (4) not null,
+enroll_semester char (1) not null,
+enroll_mark number (3),
+enroll_grade char (2)
 );
 
 alter table enrollment add constraints pk_enrollment
     primary key (stu_nbr, unit_code, enroll_year, enroll_semester);
+alter table enrollment add constraints pk_sem_chk
+    check (enroll_semester in ('1', '2', '3'));
 
 
 
 
 
 
-set ecgi off
+set echo off
