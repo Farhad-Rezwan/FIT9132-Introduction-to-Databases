@@ -128,3 +128,4 @@ insert into item_treatment values (0004549, 'KN056', 1, 123.00);
 insert into item_treatment values (0004743, 'AN002', 1, 182.33);
 insert into item_treatment values (0004904, 'EA030', 1, 110.15);
 
+commit;
