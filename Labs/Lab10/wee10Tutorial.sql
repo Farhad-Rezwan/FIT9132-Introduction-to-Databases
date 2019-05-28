@@ -159,6 +159,57 @@ HAVING
 
 /*11. Find all students enrolled in FIT1004 in semester 1, 2013 who have scored more than the average mark of FIT1004 in the same offering? Display the students' name and the mark. Sort the list in the order of the mark from the highest to the lowest.*/
 
+
+--Use the Uni database from the previous exercises to complete the following queries.
+
+--1. Find the maximum mark for FIT1004 in semester 1, 2013. 
+
+
+
+
+
+
+--2. Find the average mark of FIT1040 in semester 2, 2013.
+--3. List the average mark for each offering of FIT1040. In the listing, you need to include the year and semester number. Sort the result according to the year.
+--4. Find the number of students enrolled in the unit FIT1040 in the year 2013, under the following conditions:
+--○ Repeat students are counted each time
+--○ Repeat students are only counted once
+--5. Find the total number of enrolment per semester for each unit in the year 2013. The list should include the unitcode, semester and year. Order the list in increasing order of enrolment numbers.
+--6. Find the total number of prerequisite units for FIT2077.
+--7. Find the total number of prerequisite units for each unit. In the list, include the unitcode for which the count is applicable.
+--8. For each pre-requisite unit, calculate how many times it has been used as prerequisite. Include the name of the prerequisite unit in the listing .
+--9. Find the unit with the highest number of enrolments in a given offering in the year 2013.
+--10. Who is the oldest student in FIT1004? Display the student full name and the date of birth.
+--11. Find all students enrolled in FIT1004 in semester 1, 2013 who have scored more than the average mark of FIT1004 in the same offering? Display the students' name and the mark. Sort the list in the order of the mark from the highest to the lowest.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SET ECHO OFF
 
 SPOOL OFF
