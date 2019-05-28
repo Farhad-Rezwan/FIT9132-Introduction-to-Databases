@@ -7,12 +7,9 @@
 */
 
 /* (i)*/
-DROP SEQUENCE patient_seq;
-
-DROP SEQUENCE admission_seq;
-
-DROP SEQUENCE adm_prc_seq;
-
+drop sequence patient_seq;
+drop sequence admission_seq;
+drop sequence adm_prc_seq;
 CREATE SEQUENCE patient_seq START WITH 200000 INCREMENT BY 10;
 
 CREATE SEQUENCE admission_seq START WITH 200000 INCREMENT BY 10;
@@ -32,7 +29,7 @@ INSERT INTO patient VALUES (
 
 INSERT INTO admission VALUES (
     admission_seq.NEXTVAL,
-    TO_DATE('16-May-2019 10:00 PM', 'dd-Mon-yyyy hh:mi PM'),
+    TO_DATE('16-May-2019 10:00 AM', 'dd-Mon-yyyy hh:mi AM'),
     NULL,
     patient_seq.CURRVAL,
     (
