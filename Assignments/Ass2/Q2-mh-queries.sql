@@ -14,8 +14,10 @@ select doctor_id from doctor_speciality ds join speciality s on ds.spec_code = s
 
 /* (ii)*/
 
-
-
+select item_code, item_description, item_stock, cc_title from item i join costcentre c on i.cc_code = c.cc_code where item_stock > 50
+union
+select item_code, 'disposible', item_stock, cc_title from item i join costcentre c on i.cc_code = c.cc_code where item_stock <= 50
+order by item_code;
 
 
     
@@ -25,8 +27,6 @@ SELECT
     p.patient_fname || ' ' || p.patient_lname AS "Patient Name",
     to_char(adm_date_time, 'dd-Mon-yyyy hh24:mi') AS ADMDATETIME,
     d. doctor_title || ' '|| d.doctor_fname || ' ' || d.doctor_lname as "Doctor Name"
-    
-    
 FROM
     patient     p
     JOIN admission   a
