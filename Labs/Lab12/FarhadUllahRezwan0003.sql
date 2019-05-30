@@ -21,7 +21,7 @@ select unitcode from uni.prereq)
 order by unitcode;
 
 --3
-select unitcode, to_char(ofyear, 'yyyy') as year , semester, to_char(nvl(avg(mark),0),'$900.99')
+select unitcode, to_char(ofyear, 'yyyy') as year , semester, to_char(nvl(avg(mark),0),'900.99')
 as average from uni.enrolment
 group by unitcode, ofyear, semester
 order by unitcode;
