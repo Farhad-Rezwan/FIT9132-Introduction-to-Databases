@@ -7,9 +7,7 @@
 */
 
 /* (i)*/
-drop sequence patient_seq;
-drop sequence admission_seq;
-drop sequence adm_prc_seq;
+
 CREATE SEQUENCE patient_seq START WITH 200000 INCREMENT BY 10;
 
 CREATE SEQUENCE admission_seq START WITH 200000 INCREMENT BY 10;
@@ -41,7 +39,7 @@ INSERT INTO admission VALUES (
         WHERE
             doctor_title = 'Dr'
             AND doctor_fname = 'Sawyer'
-            AND doctor_lname = 'Haisell'
+            AND upper(doctor_lname) = 'HAISELL'
     )
 );
 
@@ -68,7 +66,7 @@ WHERE
         WHERE
             doctor_title = 'Dr'
             AND doctor_fname = 'Decca'
-            AND doctor_lname = 'Blankhorn'
+            AND upper(doctor_lname) = 'BLANKHORN'
     )
     AND spec_code = (
         SELECT

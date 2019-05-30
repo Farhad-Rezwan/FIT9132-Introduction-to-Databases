@@ -46,7 +46,6 @@ WHERE
 ORDER BY
     item_code;
 
-
     
 /* (iii)*/
 
@@ -99,73 +98,38 @@ ORDER BY
 
 SELECT
     a.patient_id,
-    p.patient_fname,
     p.patient_lname,
+    p.patient_fname,
     to_char(p.patient_dob, 'dd-MON-yyyy') AS DOB,
     COUNT(a.patient_id) as numberadmissions
     from admission a join patient p on a.patient_id = p.patient_id
-    group by a.patient_id, p.patient_fname, p.patient_lname,p.patient_dob;
+    group by a.patient_id, p.patient_lname, p.patient_fname, p.patient_dob, to_char(p.patient_dob, 'dd-MON-yyyy') having count(a.adm_no) > 2
+    order by numberadmissions desc, dob;
+ 
+    
 /* (vi)*/
 
-
-
+select adm_no, a.patient_id, patient_fname, patient_lname, (adm_date_time - adm_discharge) from admission a join patient p on a.patient_id = p.patient_id;
+select a.adm_no, p.patient_id, p.patient_fname, p.patient_lname, 
+join patient p
+on a.patient_id = p.patient_id;
     
 /* (vii)*/
 
+select * from procedure p join () on p.proc_code = adm_prc.proc_code;
+select proc_code, avg(adprc_pat_cost) from adm_prc group by proc_code;
 
-
-    
 /* (viii)*/
 
-SELECT
-    *
-FROM
-    patient     p
-    JOIN admission   a
-    ON p.patient_id = a.patient_id
-WHERE
-    adm_discharge IS NOT NULL;
 
-SELECT
-    a.adm_no,
-    ( to_number((a.adm_discharge - a.adm_date_time), '99.99') ) AS daya
-FROM
-    patient     p
-    JOIN admission   a
-    ON p.patient_id = a.patient_id
-WHERE
-    adm_discharge IS NOT NULL;
 
-SELECT
-    a.adm_no,
-    to_timestamp(a.adm_discharge - a.adm_date_time) AS days
-FROM
-    patient     p
-    JOIN admission   a
-    ON p.patient_id = a.patient_id
-WHERE
-    adm_discharge IS NOT NULL;
 
-SELECT
-    a.adm_no,
-    TO_DATE(a.adm_discharge, 'hh24:mi') - TO_DATE(a.adm_date_time, 'hh24:mi') AS days
-FROM
-    patient     p
-    JOIN admission   a
-    ON p.patient_id = a.patient_id
-WHERE
-    adm_discharge IS NOT NULL;
 
-SELECT
-    TO_DATE
-( 'to_char(a.adm_discharge, 'hh24:mi' )', 'hh24:mi') AS aba from patient p join admission a on p.patient_id = a.patient_id  where adm_discharge is not null;
 
-select to_date('to_char(a.adm_discharge, 'hh:mi ' )',
-'hh:mi' ) AS aba
-FROM
-    patient     p
-    JOIN admission   a
-    ON p.patient_id = a.patient_id
-WHERE
-    adm_discharge IS NOT NULL;
+
+
+
+
+
+
 
