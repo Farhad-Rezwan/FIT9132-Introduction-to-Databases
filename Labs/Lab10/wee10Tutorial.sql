@@ -167,7 +167,7 @@ WHERE
 /*2. Find the average mark of FIT1040 in semester 2, 2013.*/
 
 SELECT
-    TO_CHAR(AVG(mark), '99.99')
+    round(AVG(mark), 2)
 FROM
     uni.enrolment
 WHERE
