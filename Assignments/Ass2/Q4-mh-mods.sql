@@ -6,15 +6,14 @@
    
 */
 /* (i)*/
+Alter table item ADD stock_reorder_level number (3,0);
+
+update item
+set stock_reorder_level = item_stock/2;
+
+alter table item add constraint stock_reorder_level_chk check ( stock_reorder_level is not null);
 
 
-
-
-
-
-
-
-  
 /* (ii)*/
 
 

@@ -77,7 +77,7 @@ SELECT
     proc_code,
     proc_name,
     proc_description,
-    TO_CHAR(round(proc_std_cost, 2), '$9900.99') AS "standard cost"
+    TO_CHAR(round(proc_std_cost, 2), '$9900.99') AS standard_cost
 FROM
     procedure
 WHERE
@@ -124,12 +124,12 @@ SELECT
     p.patient_fname,
     TO_CHAR((a.adm_discharge - a.adm_date_time), '99')
     || ' '
-    || ' days '
+    || 'days'
     || ' '
     || TO_CHAR(round(mod((a.adm_discharge - a.adm_date_time), 1) * 24, 1), '99.9'
     )
     || ' '
-    || 'hrs' AS staylength
+    || ' hrs' AS staylength
 FROM
     admission   a
     JOIN patient     p
@@ -154,27 +154,44 @@ ORDER BY
 /* (vii)*/
 
 SELECT
-    ap.proc_code,
+    p.proc_code,
     p.proc_name,
     p.proc_description,
     p.proc_time,
-    proc_std_cost - (
+    to_Char(proc_std_cost - (
         SELECT
-            adprc_pat_cost
+            AVG(adprc_pat_cost)
         FROM
             adm_prc a
         WHERE
             ap.proc_code = a.proc_code
-    ) AS "price differential"
+    ),'9990.00') AS "price differential"
 FROM
     procedure   p
     JOIN adm_prc     ap
     ON p.proc_code = ap.proc_code
 ORDER BY
-    ap.proc_code;
-
- ---- problem cannot find
-
-
+    p.proc_code;
 
 /* (viii)*/
+
+SELECT
+    p.proc_code,
+    p.proc_name,
+    nvl(it.item_code, '---') as item_code,
+    nvl(i.item_description, '---') as item_description,
+    nvl(TO_CHAR(MAX(it.it_qty_used)), '---') AS max_qty_used
+FROM
+    adm_prc          a
+    JOIN item_treatment     it
+    ON a.adprc_no = it.adprc_no
+    join item i
+    on it.item_code = i.item_code
+    right join procedure   p
+    ON p.proc_code = a.proc_code
+GROUP BY
+    p.proc_code,
+    p.proc_name,
+    it.item_code,
+    i.item_description
+order by p.proc_name;

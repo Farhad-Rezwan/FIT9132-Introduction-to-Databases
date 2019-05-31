@@ -31,10 +31,7 @@ COMMIT;
 
 /* (ii)*/
 
-SELECT
-    *
-FROM
-    patient;
+
 
 CREATE OR REPLACE TRIGGER CHK_NULL_NAMES BEFORE
     INSERT OR UPDATE OF patient_fname, patient_lname ON patient
