@@ -7,64 +7,68 @@
 */
 
 /* (i)*/
+CREATE OR REPLACE TRIGGER CHANGE_ITEM_CODE BEFORE
+    UPDATE OF item_code ON item
+    FOR EACH ROW
+BEGIN
+    UPDATE item_treatment
+    SET
+        item_code = :new.item_code
+    WHERE
+        item_code = :old.item_code;
 
-Create or replace trigger CHNG_ITM_CODE
-before update of item_code on item
-for each row
-begin
-    update item_treatment
-    set item_code = :new.item_code
-    where item_code =:old.item_code;
-end;
+END;
 /
 
-update item set item_code = 'KNR56' where item_code = 'KN056' and item_description = 'Right Knee Brace';
-commit;
+UPDATE item
+SET
+    item_code = 'KNR56'
+WHERE
+    item_code = 'KN056'
+    AND item_description = 'Right Knee Brace';
+
+COMMIT;
 
 /* (ii)*/
 
+SELECT
+    *
+FROM
+    patient;
 
-select * from patient;
+CREATE OR REPLACE TRIGGER CHK_NULL_NAMES BEFORE
+    INSERT OR UPDATE OF patient_fname, patient_lname ON patient
+    FOR EACH ROW
+BEGIN
+    IF inserting THEN
+        IF :new.patient_fname IS NULL AND :new.patient_lname IS NULL THEN
+            raise_application_error(-20000, 'Cannot insert null value in both first name and last name'
+            );
+        END IF;
 
-create or replace trigger CHK_NULL_NAME
-before insert or update of patient_fname, patient_lname on patient
-for each row
-begin
-if inserting
-then 
-    if :new.patient_fname is null and :new.patient_lname is null
-    then raise_application_error(-20000, 'Cannot insert null value in both first name and last name');
-    end if;
-elsif updating
-then 
-    if :new.patient_fname is null and :new.patient_lname is null
-    then raise_application_error(-20000, 'Cannot insert null value in both first name and last name');
-    end if;
-end if;
-end;
+    ELSIF updating THEN
+        IF :new.patient_fname IS NULL AND :new.patient_lname IS NULL THEN
+            raise_application_error(-20000, 'Cannot insert null value in both first name and last name'
+            );
+        END IF;
+    END IF;
+END;
 /
  
--- we need for updating also
-
-
-
 /* (iii)*/
 
+CREATE OR REPLACE TRIGGER UPDATE_STOCK_ITEM BEFORE
+    DELETE OR INSERT OR UPDATE OF it_qty_used ON item_treatment
+    FOR EACH ROW
+BEGIN
+    IF inserting THEN
+        UPDATE item
+        SET
+            item_stock = item_stock - :new.it_qty_used
+        WHERE
+            item_code = :new.item_code;
 
-create or replace trigger UPDATE_STK_ITM
-before delete or insert or update of it_qty_used on item_treatment
-for each row
-begin
-if inserting
-then update item 
-set item_stock = item_stock - :new.it_qty_used
-where item_code = :new.item_code;
-end if;
-end;
+    END IF;
+END;
 /
  
-
-
-
-
-

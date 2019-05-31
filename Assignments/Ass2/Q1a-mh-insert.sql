@@ -50,7 +50,7 @@ insert into admission values (162634, to_date('07-Jan-2019 00:28:37', 'dd-Mon-yy
 insert into admission values (185690, to_date('26-Feb-2019 23:02:14', 'dd-Mon-yyyy hh24:mi:ss'), to_date('01-Mar-2019 10:54:32', 'dd-Mon-yyyy hh24:mi:ss'), 110030, 7890);
 insert into admission values (186851, to_date('16-Mar-2019 00:15:29', 'dd-Mon-yyyy hh24:mi:ss'), null, 139902, 1099);
 insert into admission values (184793, to_date('18-Feb-2019 09:23:26', 'dd-Mon-yyyy hh24:mi:ss'), to_date('08-May-2019 15:01:32', 'dd-Mon-yyyy hh24:mi:ss'), 139032, 1069);
-insert into admission values (174223, to_date('14-Mar-2019 04:11:26', 'dd-Mon-yyyy hh24:mi:ss'), to_date('29-Jan-2019 10:11:49', 'dd-Mon-yyyy hh24:mi:ss'), 115890, 1005);
+insert into admission values (174223, to_date('14-Mar-2019 04:11:26', 'dd-Mon-yyyy hh24:mi:ss'), to_date('15-Mar-2019 10:11:49', 'dd-Mon-yyyy hh24:mi:ss'), 115890, 1005);
 insert into admission values (170140, to_date('06-Mar-2019 03:22:56', 'dd-Mon-yyyy hh24:mi:ss'), to_date('18-Mar-2019 05:41:43', 'dd-Mon-yyyy hh24:mi:ss'), 143765, 1027);
 insert into admission values (164688, to_date('09-Jan-2019 13:44:34', 'dd-Mon-yyyy hh24:mi:ss'), to_date('16-Jan-2019 04:26:51', 'dd-Mon-yyyy hh24:mi:ss'), 114067, 1048);
 insert into admission values (166232, to_date('13-May-2019 12:16:12', 'dd-Mon-yyyy hh24:mi:ss'), null, 141242, 1061	);
@@ -62,8 +62,6 @@ insert into admission values (178616, to_date('13-May-2019 19:20:06', 'dd-Mon-yy
 insert into admission values (155599, to_date('12-May-2019 23:50:10', 'dd-Mon-yyyy hh24:mi:ss'), to_date('19-May-2019 00:21:23', 'dd-Mon-yyyy hh24:mi:ss'), 117239, 7900);
 insert into admission values (185691, to_date('17-Mar-2019 04:11:56', 'dd-Mon-yyyy hh24:mi:ss'), to_date('03-May-2019 10:12:34', 'dd-Mon-yyyy hh24:mi:ss'), 110030, 7890);
 insert into admission values (183298, to_date('19-May-2019 01:56:00', 'dd-Mon-yyyy hh24:mi:ss'), null, 143765, 1060);
-
-
 
 insert into adm_prc values (0001053, to_date('24-Apr-2019 07:10:33', 'dd-Mon-yyyy hh24:mi:ss'), 30.00, 12.84, 180532, 65554, 2459, 1048);
 insert into adm_prc values (0001163, to_date('17-Feb-2019 07:30:37', 'dd-Mon-yyyy hh24:mi:ss'), 355.00, 25.68, 188637, 43111, 7900, 1061);
@@ -96,7 +94,7 @@ insert into adm_prc values (0004549, to_date('01-Apr-2019 08:55:36', 'dd-Mon-yyy
 insert into adm_prc values (0004743, to_date('22-Jan-2019 07:43:48', 'dd-Mon-yyyy hh24:mi:ss'), 243.10, 182.33, 154043, 43556, 1056, 1005);
 insert into adm_prc values (0004904, to_date('24-Apr-2019 07:18:41', 'dd-Mon-yyyy hh24:mi:ss'), 250.00, 110.15, 180532, 12055, 1033,null);
 
-
+select * from adm_prc;
 insert into item_treatment values (0001053,'OV001',3,12.84);
 insert into item_treatment values (0001349, 'PS318', 7, 33.32);
 insert into item_treatment values (0001386, 'CF050', 2, 124.08);
@@ -131,5 +129,5 @@ insert into item_treatment values (0004433, 'KN056', 1, 123.00);
 insert into item_treatment values (0004549, 'KN056', 1, 123.00);
 insert into item_treatment values (0004743, 'AN002', 1, 182.33);
 insert into item_treatment values (0004904, 'EA030', 1, 110.15);
-
+select * from item_treatment;
 commit;

@@ -71,7 +71,6 @@ WHERE
 ORDER BY
     admdatetime;
 
-
 /* (iv)*/
 
 SELECT
@@ -94,42 +93,88 @@ ORDER BY
  
 /* (v)*/
 
-
-
 SELECT
     a.patient_id,
     p.patient_lname,
     p.patient_fname,
-    to_char(p.patient_dob, 'dd-MON-yyyy') AS DOB,
-    COUNT(a.patient_id) as numberadmissions
-    from admission a join patient p on a.patient_id = p.patient_id
-    group by a.patient_id, p.patient_lname, p.patient_fname, p.patient_dob, to_char(p.patient_dob, 'dd-MON-yyyy') having count(a.adm_no) > 2
-    order by numberadmissions desc, dob;
+    TO_CHAR(p.patient_dob, 'dd-MON-yyyy') AS dob,
+    COUNT(a.patient_id) AS numberadmissions
+FROM
+    admission   a
+    JOIN patient     p
+    ON a.patient_id = p.patient_id
+GROUP BY
+    a.patient_id,
+    p.patient_lname,
+    p.patient_fname,
+    p.patient_dob,
+    TO_CHAR(p.patient_dob, 'dd-MON-yyyy')
+HAVING
+    COUNT(a.adm_no) > 2
+ORDER BY
+    numberadmissions DESC,
+    dob;
  
     
 /* (vi)*/
 
-select adm_no, a.patient_id, patient_fname, patient_lname, (adm_date_time - adm_discharge) from admission a join patient p on a.patient_id = p.patient_id;
-select a.adm_no, p.patient_id, p.patient_fname, p.patient_lname, 
-join patient p
-on a.patient_id = p.patient_id;
+SELECT
+    a.adm_no,
+    p.patient_id,
+    p.patient_fname,
+    TO_CHAR((a.adm_discharge - a.adm_date_time), '99')
+    || ' '
+    || ' days '
+    || ' '
+    || TO_CHAR(round(mod((a.adm_discharge - a.adm_date_time), 1) * 24, 1), '99.9'
+    )
+    || ' '
+    || 'hrs' AS staylength
+FROM
+    admission   a
+    JOIN patient     p
+    ON a.patient_id = p.patient_id
+GROUP BY
+    a.adm_no,
+    p.patient_id,
+    p.patient_fname,
+    p.patient_lname,
+    ( a.adm_discharge - a.adm_date_time )
+HAVING
+    ( a.adm_discharge - a.adm_date_time ) > (
+        SELECT
+            AVG(adm_discharge - adm_date_time)
+        FROM
+            admission
+    )
+ORDER BY
+    a.adm_no; 
     
+   
 /* (vii)*/
 
-select * from procedure p join () on p.proc_code = adm_prc.proc_code;
-select proc_code, avg(adprc_pat_cost) from adm_prc group by proc_code;
+SELECT
+    ap.proc_code,
+    p.proc_name,
+    p.proc_description,
+    p.proc_time,
+    proc_std_cost - (
+        SELECT
+            adprc_pat_cost
+        FROM
+            adm_prc a
+        WHERE
+            ap.proc_code = a.proc_code
+    ) AS "price differential"
+FROM
+    procedure   p
+    JOIN adm_prc     ap
+    ON p.proc_code = ap.proc_code
+ORDER BY
+    ap.proc_code;
+
+ ---- problem cannot find
+
+
 
 /* (viii)*/
-
-
-
-
-
-
-
-
-
-
-
-
-
