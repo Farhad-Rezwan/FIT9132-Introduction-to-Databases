@@ -158,14 +158,14 @@ SELECT
     p.proc_name,
     p.proc_description,
     p.proc_time,
-    to_Char(proc_std_cost - (
+    TO_CHAR(proc_std_cost -(
         SELECT
             AVG(adprc_pat_cost)
         FROM
             adm_prc a
         WHERE
             ap.proc_code = a.proc_code
-    ),'9990.00') AS "price differential"
+    ), '9990.00') AS "price differential"
 FROM
     procedure   p
     JOIN adm_prc     ap
@@ -178,20 +178,21 @@ ORDER BY
 SELECT
     p.proc_code,
     p.proc_name,
-    nvl(it.item_code, '---') as item_code,
-    nvl(i.item_description, '---') as item_description,
+    nvl(it.item_code, '---') AS item_code,
+    nvl(i.item_description, '---') AS item_description,
     nvl(TO_CHAR(MAX(it.it_qty_used)), '---') AS max_qty_used
 FROM
     adm_prc          a
-    JOIN item_treatment     it
+    JOIN item_treatment   it
     ON a.adprc_no = it.adprc_no
-    join item i
-    on it.item_code = i.item_code
-    right join procedure   p
+    JOIN item             i
+    ON it.item_code = i.item_code
+    RIGHT JOIN procedure        p
     ON p.proc_code = a.proc_code
 GROUP BY
     p.proc_code,
     p.proc_name,
     it.item_code,
     i.item_description
-order by p.proc_name;
+ORDER BY
+    p.proc_name;

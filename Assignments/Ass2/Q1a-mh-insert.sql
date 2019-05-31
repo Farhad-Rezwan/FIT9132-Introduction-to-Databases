@@ -94,11 +94,7 @@ insert into adm_prc values (0004549, to_date('01-Apr-2019 08:55:36', 'dd-Mon-yyy
 insert into adm_prc values (0004743, to_date('22-Jan-2019 07:43:48', 'dd-Mon-yyyy hh24:mi:ss'), 400.10, 340.33, 154043, 43556, 1056, 1005);
 insert into adm_prc values (0004904, to_date('24-Apr-2019 07:18:41', 'dd-Mon-yyyy hh24:mi:ss'), 250.00, 221.15, 180532, 12055, 1033,null);
 
-insert into item_treatment values (0001053,'OV001',3,12.84);
-insert into item_treatment values (0001349, 'PS318', 19, 33.32);
-insert into item_treatment values (0001386, 'CF050', 2, 124.08);
-insert into item_treatment values (0001475, 'LB250', 3, 645.30);
-insert into item_treatment values (0001504, 'AT258', 18, 20.52);
+
 insert into item_treatment values (0001689, 'CA002', 20, 33.75);
 insert into item_treatment values (0001689, 'NE001', 4, 13.80);
 insert into item_treatment values (0001773, 'BI500', 1, 365.48);

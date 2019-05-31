@@ -7,17 +7,12 @@
 */
 
 /* (i)*/
-
-drop sequence patient_seq;
-drop sequence admision_seq;
-drop sequence adm_prc_seq;
-
-
 CREATE SEQUENCE patient_seq START WITH 200000 INCREMENT BY 10;
 
 CREATE SEQUENCE admission_seq START WITH 200000 INCREMENT BY 10;
 
 CREATE SEQUENCE adm_prc_seq START WITH 200000 INCREMENT BY 10;
+
 
 
 /* (ii)*/

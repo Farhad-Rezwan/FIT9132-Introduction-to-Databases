@@ -19,6 +19,16 @@ BEGIN
 
 END;
 /
+ 
+-- Test Harness
+set serveroutput on
+set echo on
+
+-- prior state
+select * from item;
+select * from item_treatment;
+
+--test trigger
 
 UPDATE item
 SET
@@ -27,7 +37,12 @@ WHERE
     item_code = 'KN056'
     AND item_description = 'Right Knee Brace';
 
-COMMIT;
+-- post state
+select * from item;
+select * from item_treatment;
+-- undo changes
+rollback;
+set echo off;
 
 /* (ii)*/
 
@@ -51,6 +66,25 @@ BEGIN
     END IF;
 END;
 /
+
+-- Test Harness
+set serveroutput on
+set echo on
+
+-- prior state
+select * from patient;
+
+--test trigger
+insert into patient values (110000,null, null ,'HJighway road, Burwood, VIC', to_date('04-Dec-1993', 'dd-Mon-yyyy'), '2100902837');
+
+-- post state
+select * from patient;
+
+-- Undo changes
+
+rollback;
+set echo off;
+
  
 /* (iii)*/
 
@@ -68,4 +102,24 @@ BEGIN
     END IF;
 END;
 /
+ 
+-- Test Harness
+set serveroutput on
+set echo on
+
+-- prior state
+select * from item;
+select * from item_treatment;
+
+--test trigger
+insert into item_treatment values (0003097, 'AT258', 2, 20.26);
+
+-- post state
+select * from item;
+select * from item_treatment;
+
+-- Undo changes
+
+rollback;
+set echo off;
  
